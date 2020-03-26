@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100 w-100">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pete Wanca</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css" />
-        <link rel="stylesheet" href="./assets/style/style.css" />
-        <!-- Icons by good-ware and freepik from Flaticon (https://www.flaticon.com/) -->
+        <!-- Icons by good-ware, freepik, flat-icons, dave-gandy, catkuro and mynamepong from Flaticon (https://www.flaticon.com/) -->
     </head>
 
     <body>
@@ -21,10 +20,10 @@
 
             <div class="row text-center border-bottom">
                 <div class="col-lg-2">
-                    <img src="./assets/images/basketball.png" alt="" />
+                    <img src="./images/basketball.png" alt="" />
                 </div>
                 <div class="col-lg-2 text-center">
-                    <img src="./assets/images/ramen.png" alt="" />
+                    <img src="./images/ramen.png" alt="" />
                 </div>
                 <div class="col-lg-4 text-center">
                     <p>
@@ -33,29 +32,106 @@
                     </p>
                 </div>
                 <div class="col-lg-2 text-center">
-                    <img src="./assets/images/corgi.png" alt="" />
+                    <img src="./images/corgi.png" alt="" />
                 </div>
                 <div class="col-lg-2 text-center">
-                    <img src="./assets/images/game.png" alt="" />
+                    <img src="./images/game.png" alt="" />
                 </div>
             </div>
 
             <!-- PROJECT AREA -->
             <div class="row text-center my-5">
                 <div class="col-lg-12">
-                    <img
-                        src="./assets/images/pete.jpg"
-                        alt="Pete in the snow"
-                        style="height: 400px;"
-                    />
-                    <h5 class="mt-5">
+                    <img src="./images/pete.jpg" alt="Pete in the snow" style="height: 400px;" />
+                    <h5 class="mt-5 font-italic">
                         Here are some projects I've worked on. For a complete listing, visit my
                         <a href="https://github.com/petewanca" target="_blank">GitHub</a>.
                     </h5>
                 </div>
             </div>
 
+            <!-- PROJECT SECTION -->
+            <div class="row">
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img
+                            src="./images/computer.png"
+                            class="card-img-top p-3"
+                            alt="image for date project"
+                        />
+                        <div class="card-body border-top bg-light">
+                            <h5 class="card-title">Date Gap Analyzer</h5>
+                            <p class="card-text">
+                                Compare data against itself to return differences in time. Can be
+                                tailored to any data set.
+                            </p>
+                            <a
+                                href="https://github.com/petewanca/date-gap-analyzer"
+                                target="_blank"
+                                class="btn btn-primary"
+                                >CODE</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img
+                            src="./images/data-security.png"
+                            class="card-img-top p-3"
+                            alt="image for auth project"
+                        />
+                        <div class="card-body border-top bg-light">
+                            <h5 class="card-title">User Auth</h5>
+                            <p class="card-text">
+                                User authentication via Passport with JSON web tokens. Uses React
+                                with Context and Hooks.
+                            </p>
+                            <a
+                                href="https://github.com/petewanca/jwt-auth-implementation"
+                                target="_blank"
+                                class="btn btn-primary"
+                                >CODE</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img
+                            src="./images/reddit.png"
+                            class="card-img-top p-3"
+                            alt="image for akai project"
+                        />
+                        <div class="card-body border-top bg-light">
+                            <h5 class="card-title">Akaisore</h5>
+                            <p class="card-text">
+                                Japanese for 'red' && 'it'. In development to be released in April
+                                2020.
+                            </p>
+                            <a
+                                href="https://github.com/petewanca/akaisore"
+                                target="_blank"
+                                class="btn btn-primary"
+                                >CODE</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- SKILLS -->
+            <div class="row my-5 text-center">
+                <div class="offset-lg-2 col-lg-8">
+                    <h5 class="mt-5 font-italic">
+                        Below are a listing of relevant skills. This is not all-encompassing, but is
+                        an honest representation of what I use most frequently.
+                    </h5>
+                </div>
+            </div>
             <div class="row my-5">
                 <!-- FRONT END BRANCH -->
                 <div class="col-lg-4">
@@ -108,51 +184,36 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- PROJECT SECTION -->
-            <div class="row">
-                <!-- individual card -->
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">CODE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- individual card -->
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">CODE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- individual card -->
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">CODE</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- CONTACT -->
+        <div class="row my-5 text-center">
+            <div class="offset-lg-2 col-lg-8">
+                <h1>
+                    Contact
+                </h1>
+            </div>
+        </div>
+        <div class="row my-5 text-center">
+            <div class="offset-lg-3 col-lg-2">
+                <a href="https://www.linkedin.com/in/petewanca" target="_blank"
+                    ><img src="./images/linkedin.png" alt="linkedin logo"
+                /></a>
+            </div>
+            <div class="col-lg-2">
+                <a href="https://www.github.com/petewanca" target="_blank"
+                    ><img src="./images/github.png" alt="github logo"
+                /></a>
+            </div>
+            <div class="col-lg-2">
+                <a href="mailto:petewanca@gmail.com" target="_blank"
+                    ><img
+                        src="./images/mail.png"
+                        alt="email logo"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="petewanca@gmail.com"
+                /></a>
             </div>
         </div>
         <!-- END OF MAIN PAGE CONTAINER -->
@@ -162,6 +223,7 @@
             <div class="col-lg-12">
                 <p>
                     Made by <a href="https://github.com/petewanca" target="_blank">Pete</a> in 2020
+                    with no CSS, just Bootstrap &#128540;
                 </p>
             </div>
         </footer>
@@ -181,5 +243,10 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"
         ></script>
+        <script type="text/javascript">
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
     </body>
 </html>

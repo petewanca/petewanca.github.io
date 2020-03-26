@@ -6,3 +6,8 @@ Welcome to my portfolio. Please visit my page directly for more information: htt
 
 -   https://www.linkedin.com/in/petewanca
 -   petewanca@gmail.com
+
+## Future additions
+
+-   Mobile responsive
+-   Additional icons for skills branches
