@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pete Wanca</title>
-        <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css" />
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/screenStyle.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
     </head>
-
     <body>
-        <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">PW</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarColor02"
-                aria-controls="navbarColor02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <header>
+            <h1>Hey, I'm Pete</h1>
+            <h3>Full Stack JavaScript developer based in Nashville, TN, USA</h3>
+        </header>
 
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
-                    </li>
-                </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
+        <main>
+            <h2>Content</h2>
+            <!-- ///////// PROJECT SECTION ///////// -->
+            <h3>Some projects I've worked on.</h3>
+            <div>
+                <h3>Project Card</h3>
+                <p>This is a short project description about a project I did.</p>
+                <button>See Code</button>
             </div>
-        </nav>
+            <div>
+                <h3>Project Card</h3>
+                <p>This is a short project description about a project I did.</p>
+                <button>See Code</button>
+            </div>
+            <div>
+                <h3>Project Card</h3>
+                <p>This is a short project description about a project I did.</p>
+                <button>See Code</button>
+            </div>
 
-        <footer class="fixed-bottom text-light text-center py-4">
-            Made by Pete in 2020
+            <!-- ///////// SKILLS SECTION ///////// -->
+            <div>
+                <h3>Skills Icons below</h3>
+                <p>Here's a bunch of hip and trendy icons folks use.</p>
+            </div>
+
+            <!-- ///////// ABOUT SECTION ///////// -->
+            <div>
+                <h3>Call to action</h3>
+                <p>This will contain a little blurb about my dev and personal life.</p>
+            </div>
+
+            <!-- ///////// CONTACT SECTION ///////// -->
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li>LinkedIn Icon</li>
+                    <li>GitHub Icon</li>
+                    <li>Email Icon</li>
+                    <li>Random Icon (leads to Ruby :) )</li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- ///////// FOOTER SECTION ///////// -->
+        <footer>
+            <p>
+                Made by <a href="https://github.com/petewanca" target="_blank">Pete</a> in 2020
+                &copy;
+            </p>
         </footer>
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
-        ></script>
     </body>
 </html>
