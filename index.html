@@ -4,70 +4,182 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pete Wanca</title>
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/screenStyle.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+        <!-- Icons by good-ware and freepik from Flaticon (https://www.flaticon.com/) -->
     </head>
+
     <body>
-        <header>
-            <h1>Hey, I'm Pete</h1>
-            <h3>Full Stack JavaScript developer based in Nashville, TN, USA</h3>
-        </header>
-
-        <main>
-            <h2>Content</h2>
-            <!-- ///////// PROJECT SECTION ///////// -->
-            <h3>Some projects I've worked on.</h3>
-            <div>
-                <h3>Project Card</h3>
-                <p>This is a short project description about a project I did.</p>
-                <button>See Code</button>
-            </div>
-            <div>
-                <h3>Project Card</h3>
-                <p>This is a short project description about a project I did.</p>
-                <button>See Code</button>
-            </div>
-            <div>
-                <h3>Project Card</h3>
-                <p>This is a short project description about a project I did.</p>
-                <button>See Code</button>
+        <div class="container">
+            <!-- HEADER -->
+            <div class="row text-center my-5">
+                <div class="container-fluid">
+                    <h1>Hi, I'm Pete</h1>
+                    <h3>Developer based in Nashville, TN, USA</h3>
+                </div>
             </div>
 
-            <!-- ///////// SKILLS SECTION ///////// -->
-            <div>
-                <h3>Skills Icons below</h3>
-                <p>Here's a bunch of hip and trendy icons folks use.</p>
+            <div class="row text-center border-bottom">
+                <div class="col-lg-2">
+                    <img src="./assets/images/basketball.png" alt="" />
+                </div>
+                <div class="col-lg-2 text-center">
+                    <img src="./assets/images/ramen.png" alt="" />
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p>
+                        I write clean, easily-maintainable code with an emphasis on Full Stack
+                        JavaScript development.
+                    </p>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <img src="./assets/images/corgi.png" alt="" />
+                </div>
+                <div class="col-lg-2 text-center">
+                    <img src="./assets/images/game.png" alt="" />
+                </div>
             </div>
 
-            <!-- ///////// ABOUT SECTION ///////// -->
-            <div>
-                <h3>Call to action</h3>
-                <p>This will contain a little blurb about my dev and personal life.</p>
+            <!-- PROJECT AREA -->
+            <div class="row text-center my-5">
+                <div class="col-lg-12">
+                    <img
+                        src="./assets/images/pete.jpg"
+                        alt="Pete in the snow"
+                        style="height: 400px;"
+                    />
+                    <h5 class="mt-5">
+                        Here are some projects I've worked on. For a complete listing, visit my
+                        <a href="https://github.com/petewanca" target="_blank">GitHub</a>.
+                    </h5>
+                </div>
             </div>
 
-            <!-- ///////// CONTACT SECTION ///////// -->
-            <div>
-                <h3>Contact</h3>
-                <ul>
-                    <li>LinkedIn Icon</li>
-                    <li>GitHub Icon</li>
-                    <li>Email Icon</li>
-                    <li>Random Icon (leads to Ruby :) )</li>
-                </ul>
-            </div>
-        </main>
+            <!-- SKILLS -->
+            <div class="row my-5">
+                <!-- FRONT END BRANCH -->
+                <div class="col-lg-4">
+                    <div class="card shadow-lg mb-4 bg-info" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-light">Front End</h5>
+                            <div class="card-text">
+                                <ul class="list-group">
+                                    <li class="list-group-item">React</li>
+                                    <li class="list-group-item">JavaScript</li>
+                                    <li class="list-group-item">CSS</li>
+                                    <li class="list-group-item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- ///////// FOOTER SECTION ///////// -->
-        <footer>
-            <p>
-                Made by <a href="https://github.com/petewanca" target="_blank">Pete</a> in 2020
-                &copy;
-            </p>
+                <!-- BACK END BRANCH -->
+                <div class="col-lg-4">
+                    <div class="card shadow-lg mb-4 bg-success" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-light">Back End</h5>
+                            <div class="card-text">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Node</li>
+                                    <li class="list-group-item">Express</li>
+                                    <li class="list-group-item">SQL</li>
+                                    <li class="list-group-item">MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK END BRANCH -->
+                <div class="col-lg-4">
+                    <div class="card shadow-lg mb-4 bg-warning" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-light">Other</h5>
+                            <div class="card-text">
+                                <ul class="list-group">
+                                    <li class="list-group-item">User Authentication</li>
+                                    <li class="list-group-item">API's</li>
+                                    <li class="list-group-item">MVC Patterns</li>
+                                    <li class="list-group-item">Templating (Handlebars, EJS)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT SECTION -->
+            <div class="row">
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">CODE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">CODE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- individual card -->
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets//images/pete.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">CODE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF MAIN PAGE CONTAINER -->
+
+        <!-- FOOTER SECTION -->
+        <footer class="row text-center container-fluid mt-5">
+            <div class="col-lg-12">
+                <p>
+                    Made by <a href="https://github.com/petewanca" target="_blank">Pete</a> in 2020
+                </p>
+            </div>
         </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
