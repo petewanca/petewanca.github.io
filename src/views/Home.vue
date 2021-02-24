@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <LargeBanner image="./images/drum-kit.jpeg" color="green" />
+    <LargeBanner
+      title="BRING YOUR MUSIC TO LIFE"
+      subtitle="I provide remote drum tracking services to artists around the world."
+      image="./images/drum-kit.jpeg"
+      color="green"
+    />
   </div>
 </template>
 

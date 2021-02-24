@@ -64,6 +64,8 @@ export default {
 
 #nav-container {
   justify-content: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #hamburger-menu {
@@ -78,8 +80,10 @@ export default {
 #brand {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   text-align: center;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .navbar-nav {

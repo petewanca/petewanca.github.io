@@ -1,16 +1,23 @@
 <template>
-  <div>
+  <div class="footer">
     <div>
-      <a href="https://www.facebook.com/petewancadrums/" target="_blank"
-        ><BIconFacebook
-      /></a>
-      <a href="https://www.instagram.com/petewanca" target="_blank"
-        ><BIconInstagram
+      <a
+        class="footer-icon"
+        href="https://www.facebook.com/petewancadrums/"
+        target="_blank"
+        ><BIconFacebook fill="black"
       /></a>
       <a
+        class="footer-icon"
+        href="https://www.instagram.com/petewanca"
+        target="_blank"
+        ><BIconInstagram fill="black"
+      /></a>
+      <a
+        class="footer-icon"
         href="https://www.youtube.com/channel/UCCnzOSrTXbuYnooC73mmrLA"
         target="_blank"
-        ><BIconYoutube
+        ><BIconYoutube fill="black"
       /></a>
     </div>
     <div>Copyright © 2021 Pete Wanca - All Rights Reserved</div>
@@ -35,4 +42,14 @@ export default {
 </script>
 
 <style>
+.footer {
+  background-color: #161616;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icon {
+}
 </style>
