@@ -1,7 +1,7 @@
 <template>
-  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <div id="nav-container" class="container-fluid">
-      <div class="col-2">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light py-lg-3">
+    <div id="nav-container" class="container-fluid gx-lg-5">
+      <div class="col-2 d-lg-none">
         <button
           id="hamburger-menu"
           class="navbar-toggler"
@@ -15,24 +15,31 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="col-8" id="brand-container">
-        <router-link id="brand" to="/"
-          >// PETE WANCA<br />DRUM TRACKING</router-link
-        >
-      </div>
+      <router-link
+        class="col-8 col-lg-6 text-lg-start px-lg-5"
+        id="brand"
+        to="/"
+        >// PETE WANCA<br />DRUM TRACKING</router-link
+      >
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link to="/">Home</router-link>
+            <router-link active-class="active" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/samples">Samples</router-link>
+            <router-link active-class="active" to="/samples"
+              >Samples</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link to="/testimonials">Testimonials</router-link>
+            <router-link active-class="active" to="/testimonials"
+              >Testimonials</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link to="/contact">Contact</router-link>
+            <router-link active-class="active" to="/contact"
+              >Contact</router-link
+            >
           </li>
         </ul>
       </div>
@@ -57,18 +64,6 @@ export default {
   justify-content: normal;
 }
 
-#mobile-nav-items {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-  display: flex;
-}
-
 #hamburger-menu {
   border: none;
   text-align: left;
@@ -78,13 +73,20 @@ export default {
   padding: 1px 6px;
 }
 
-#brand-container {
-  text-align: center;
-}
-
 #brand {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.active {
+  padding-bottom: 3px;
+  border-bottom: 1px solid;
 }
 </style>
