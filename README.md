@@ -1,13 +1,8 @@
-# about
+# [petewanca.github.io](petewanca.github.io) / [petewanca.com](petewanca.com)
 
 Welcome to my portfolio. Please visit my page directly for more information: https://petewanca.github.io/
 
-## contact
+## Contact
 
 -   https://www.linkedin.com/in/petewanca
 -   petewanca@gmail.com
-
-## Future additions
-
--   Mobile responsive
--   Additional icons for skills branches
