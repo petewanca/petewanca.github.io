@@ -1,5 +1,8 @@
 <template>
-  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light py-lg-3">
+  <nav
+    id="nav"
+    class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-lg-3"
+  >
     <div id="nav-container" class="container-fluid gx-lg-5">
       <div class="col-2 d-lg-none">
         <button
@@ -57,7 +60,6 @@ export default {
 <style>
 #nav {
   background-color: rgba(0, 0, 0, 0.25) !important;
-  position: static;
 }
 
 #nav-container {

@@ -20,10 +20,16 @@ export default {
 
 #app {
   font-family: Lato, Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:active,
+a:focus {
+  color: white;
 }
 </style>
