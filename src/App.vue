@@ -21,6 +21,9 @@ export default {
 #app {
   font-family: Lato, Helvetica, Arial, sans-serif;
   color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {

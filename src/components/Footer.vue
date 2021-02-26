@@ -46,7 +46,7 @@ export default {
 }
 
 .footer-line {
-  width: 20%;
+  width: 50px;
   border-bottom: 1px solid #333;
   padding-top: 1rem;
 }

@@ -2,9 +2,10 @@
   <div class="home">
     <LargeBanner
       title="BRING YOUR MUSIC TO LIFE"
-      subtitle="I provide remote drum tracking services to artists around the world."
+      subtitle="I provide remote
+    drum tracking services to artists around the world."
       image="./images/drum-kit.jpeg"
-      color="green"
+      :button="button"
     />
   </div>
 </template>
@@ -15,8 +16,22 @@ import LargeBanner from "@/components/LargeBanner.vue";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      button: {
+        text: "Send me a message.",
+        link: "/contact",
+      },
+    };
+  },
   components: {
     LargeBanner,
   },
 };
 </script>
+
+<style>
+.home {
+  flex-grow: 1;
+}
+</style>

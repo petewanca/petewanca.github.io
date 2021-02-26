@@ -3,13 +3,21 @@
     <div class="contents">
       <h1>{{ title }}</h1>
       <h2>{{ subtitle }}</h2>
+      <Button v-if="button" :text="buttonData.text" :link="buttonData.link" />
     </div>
   </div>
 </template>
 
 <script>
+import Button from "@/components/Button.vue";
+
 export default {
   name: "LargeBanner",
+  data() {
+    return {
+      buttonData: { ...this.button },
+    };
+  },
   props: {
     image: {
       type: String,
@@ -20,21 +28,26 @@ export default {
     subtitle: {
       type: String,
     },
+    button: {
+      type: Object,
+      default: null,
+    },
+  },
+  components: {
+    Button,
   },
 };
 </script>
 
 <style>
 .banner-container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 3rem;
 }
 
 .contents {
