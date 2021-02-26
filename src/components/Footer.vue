@@ -1,43 +1,28 @@
 <template>
   <div class="footer">
-    <div>
+    <div class="mb-3">
+      <a href="https://www.facebook.com/petewancadrums/" target="_blank"
+        ><i class="bi bi-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/petewanca" target="_blank"
+        ><i class="bi bi-instagram"></i
+      ></a>
       <a
-        class="footer-icon"
-        href="https://www.facebook.com/petewancadrums/"
-        target="_blank"
-        ><BIconFacebook fill="black"
-      /></a>
-      <a
-        class="footer-icon"
-        href="https://www.instagram.com/petewanca"
-        target="_blank"
-        ><BIconInstagram fill="black"
-      /></a>
-      <a
-        class="footer-icon"
         href="https://www.youtube.com/channel/UCCnzOSrTXbuYnooC73mmrLA"
         target="_blank"
-        ><BIconYoutube fill="black"
-      /></a>
+        ><i class="bi bi-youtube"></i
+      ></a>
     </div>
-    <div>Copyright © 2021 Pete Wanca - All Rights Reserved</div>
+    <div class="footer-text">
+      Copyright © 2021 Pete Wanca - All Rights Reserved
+    </div>
+    <div class="footer-line"></div>
   </div>
 </template>
 
 <script>
-import {
-  BIconYoutube,
-  BIconFacebook,
-  BIconInstagram,
-} from "bootstrap-icons-vue";
-
 export default {
   name: "Footer",
-  components: {
-    BIconYoutube,
-    BIconFacebook,
-    BIconInstagram,
-  },
 };
 </script>
 
@@ -50,6 +35,19 @@ export default {
   align-items: center;
 }
 
-.footer-icon {
+.bi {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.footer-line {
+  width: 20%;
+  border-bottom: 1px solid #333;
+  padding-top: 1rem;
 }
 </style>
