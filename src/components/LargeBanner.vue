@@ -1,11 +1,14 @@
 <template>
-  <div class="banner-container" :style="{ backgroundImage: `url('${image}')` }">
+  <section
+    class="banner-container"
+    :style="{ backgroundImage: `url('${image}')` }"
+  >
     <div class="contents">
       <h1>{{ title }}</h1>
       <h2>{{ subtitle }}</h2>
       <Button v-if="button" :text="buttonData.text" :link="buttonData.link" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
