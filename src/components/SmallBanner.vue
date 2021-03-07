@@ -1,7 +1,7 @@
 <template>
   <section class="banner-container-sm">
     <h3>{{ title }}</h3>
-    <h4>{{ subtitle }}</h4>
+    <p>{{ subtitle }}</p>
   </section>
 </template>
 
@@ -29,7 +29,10 @@ export default {
   flex: 1 0 auto;
 }
 
-h4 {
+.banner-container-sm > p {
   font-weight: 300;
+  font-size: 1.1rem;
+  color: rgb(164, 164, 164);
+  margin: 0;
 }
 </style>
