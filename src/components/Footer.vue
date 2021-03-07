@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="mb-3">
       <a href="https://www.facebook.com/petewancadrums/" target="_blank"
         ><i class="bi bi-facebook"></i
@@ -17,7 +17,7 @@
       Copyright © 2021 Pete Wanca - All Rights Reserved
     </div>
     <div class="footer-line"></div>
-  </div>
+  </footer>
 </template>
 
 <script>

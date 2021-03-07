@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <main class="home">
     <LargeBanner
       title="BRING YOUR MUSIC TO LIFE"
       subtitle="I provide remote
@@ -7,12 +7,16 @@
       image="./images/drum-kit.jpeg"
       :button="button"
     />
-  </div>
+    <SmallBanner
+      title="Finding the right parts for your music"
+      subtitle="From live drums, to overdubbed percussion, to swelling cymbals, programmed beats and more, I can find the right part for your music. My goal is to give you everything you need to push your art to the next level."
+    />
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
 import LargeBanner from "@/components/LargeBanner.vue";
+import SmallBanner from "@/components/SmallBanner.vue";
 
 export default {
   name: "Home",
@@ -26,12 +30,15 @@ export default {
   },
   components: {
     LargeBanner,
+    SmallBanner,
   },
 };
 </script>
 
 <style>
 .home {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 </style>

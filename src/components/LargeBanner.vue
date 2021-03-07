@@ -24,6 +24,7 @@ export default {
     },
     title: {
       type: String,
+      required: true,
     },
     subtitle: {
       type: String,
@@ -41,13 +42,14 @@ export default {
 
 <style>
 .banner-container {
-  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 2 0 auto;
+  padding: calc(100vh - 75vh) 0;
 }
 
 .contents {
