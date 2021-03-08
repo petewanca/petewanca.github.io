@@ -3,6 +3,6 @@
     "tabWidth": 4,
     "semi": true,
     "singleQuote": false,
-    "jsxBracketSameLine": true,
-    "bracketSpacing": true
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true
 }

@@ -56,7 +56,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     flex: 2 0 auto;
-    padding: calc(100vh - 75vh) 0;
+    padding: calc(100vh - 70vh) 0;
 }
 
 .contents {
