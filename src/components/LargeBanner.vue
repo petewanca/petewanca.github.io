@@ -1,77 +1,81 @@
 <template>
-  <section
-    class="banner-container"
-    :style="{ backgroundImage: `url('${image}')` }"
-  >
-    <div class="contents">
-      <h1>{{ title }}</h1>
-      <h2>{{ subtitle }}</h2>
-      <Button v-if="button" :text="buttonData.text" :link="buttonData.link" />
-    </div>
-  </section>
+    <section
+        class="banner-container"
+        :style="{ backgroundImage: `url('${image}')` }"
+    >
+        <div class="contents">
+            <h1>{{ title }}</h1>
+            <h2>{{ subtitle }}</h2>
+            <Button
+                v-if="button"
+                :text="buttonData.text"
+                :link="buttonData.link"
+            />
+        </div>
+    </section>
 </template>
 
 <script>
 import Button from "@/components/Button.vue";
 
 export default {
-  name: "LargeBanner",
-  data() {
-    return {
-      buttonData: { ...this.button },
-    };
-  },
-  props: {
-    image: {
-      type: String,
+    name: "LargeBanner",
+    data() {
+        return {
+            buttonData: { ...this.button }
+        };
     },
-    title: {
-      type: String,
-      required: true,
+    props: {
+        image: {
+            type: String
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        subtitle: {
+            type: String
+        },
+        button: {
+            type: Object,
+            default: null
+        }
     },
-    subtitle: {
-      type: String,
-    },
-    button: {
-      type: Object,
-      default: null,
-    },
-  },
-  components: {
-    Button,
-  },
+    components: {
+        Button
+    }
 };
 </script>
 
 <style>
 .banner-container {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex: 2 0 auto;
-  padding: calc(100vh - 75vh) 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2 0 auto;
+    padding: calc(100vh - 75vh) 0;
 }
 
 .contents {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 7%;
 }
 
 h1 {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  line-height: 3rem;
-  font-weight: bold;
-  padding-bottom: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 h2 {
-  font-weight: 300;
-  line-height: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 </style>
