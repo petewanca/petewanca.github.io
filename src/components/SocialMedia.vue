@@ -7,7 +7,7 @@
         <img
           v-for="item in apiResult"
           :key="item.id"
-          class="col-6 col-md-4"
+          class="col-6 col-md-3"
           :src="item"
         />
       </div>

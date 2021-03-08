@@ -31,6 +31,7 @@ a {
 }
 
 a:active,
+a:hover,
 a:focus {
   color: white;
 }
