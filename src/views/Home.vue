@@ -40,6 +40,7 @@ export default {
 
 <style>
 .page {
+    background-color: rgb(26, 26, 26);
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;

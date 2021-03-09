@@ -32,13 +32,24 @@ export default {
 
 <style>
 .bumper {
-    height: 7rem;
+    height: 88px;
 }
 
-.page {
-    background-color: rgb(26, 26, 26);
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
+@media (max-width: 992px) and (min-width: 442px) {
+    .bumper {
+        height: 72px;
+    }
+}
+
+@media (max-width: 442px) {
+    .bumper {
+        height: 100px;
+    }
+}
+
+@media (max-width: 402px) {
+    .bumper {
+        height: 128px;
+    }
 }
 </style>
