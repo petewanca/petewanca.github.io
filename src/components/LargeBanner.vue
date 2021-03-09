@@ -64,6 +64,8 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin: 0 7%;
+    border-left: solid 2px rgba(255, 255, 255, 0.5);
+    padding-left: 2rem;
 }
 
 h1 {
@@ -72,10 +74,20 @@ h1 {
     line-height: 3rem;
     font-weight: bold;
     padding-bottom: 1rem;
+    margin: 0;
 }
 
 h2 {
     font-weight: 300;
     line-height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .contents {
+        border-left: none;
+        padding-left: 0;
+    }
 }
 </style>

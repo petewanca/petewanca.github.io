@@ -24,22 +24,22 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <router-link active-class="active" to="/">
-                            Home
+                            HOME
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link active-class="active" to="/samples">
-                            Samples
+                            SAMPLES
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link active-class="active" to="/testimonials">
-                            Testimonials
+                            TESTIMONIALS
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link active-class="active" to="/contact">
-                            Contact
+                            CONTACT
                         </router-link>
                     </li>
                 </ul>
@@ -110,7 +110,7 @@ export default {
 
 #nav-container {
     justify-content: normal;
-    padding: 1rem 7%;
+    padding: 0 7%;
 }
 
 #hamburger-menu {
@@ -128,16 +128,20 @@ export default {
 
 #brand {
     font-family: Montserrat, Helvetica, Arial, sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: 3px;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
     text-align: center;
     font-weight: bold;
     line-height: normal;
+    color: rgb(226, 226, 226);
 }
 
 .navbar-nav {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-weight: 300;
+    color: rgb(226, 226, 226);
+    letter-spacing: 0.063em;
 }
 
 .active {
