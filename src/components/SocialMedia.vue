@@ -115,7 +115,7 @@ export default {
 <style>
 .social-container {
     background-color: black;
-    padding: 2rem 7%;
+    padding: 2rem 7% 0 7%;
 }
 
 .social-container > hr {

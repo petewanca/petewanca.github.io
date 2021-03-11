@@ -28,7 +28,7 @@ export default {
 
 <style>
 .footer {
-    background-color: #161616;
+    background-color: rgb(26, 26, 26);
     padding: 2rem;
     display: flex;
     flex-direction: column;
