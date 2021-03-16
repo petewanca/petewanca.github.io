@@ -12,46 +12,74 @@
         />
         <style>
             .heroImg {
-                background-image: url('./images/drumkit.jpeg');
-                background-repeat: no-repeat;
+                background: url('./images/console2.jpg');
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
-                height: 500px;
+                height: 750px;
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
             }
         </style>
     </head>
 
     <body>
-        <div class="container">
-            <!-- HEADER -->
-            <div class="row mt-2">
-                <!-- LOGO -->
-                <div class="col-lg-4 col-12 col-sm-12 col-md-4">
-                    <div class="align-middle">
-                        <!-- placeholder logo, having this finished at some point this week -->
-                        <img
-                            src="./images/sheerpanic2.png"
-                            alt="sheer panic studios image"
-                            style="height: 125px"
-                        />
-                    </div>
-                </div>
-                <!-- NAV -->
-                <div class="offset-lg-1 col-lg-7 text-right">
-                    some sort of nav here that just scrolls them to samples, about and contact.
-                    Doesn't have to be visible on mobile, probably overkill on small screens. Font
-                    might be cool to match the sort of bold, impact-ish font of the 'sheer panic'
-                    logo
+        <!-- HEADER -->
+        <nav class="navbar navbar-expand-lg m-0 p-4">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img
+                    src="./images/sheerpanic2.png"
+                    alt="sheer panic studios image"
+                    style="height: 125px"
+                />
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#samples">Samples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <div class="row mt-2">
+            <div class="col-lg-4 col-12 col-sm-12 col-md-4">
+                <div class="align-middle">
+                    <img
+                        src="./images/sheerpanic2.png"
+                        alt="sheer panic studios image"
+                        style="height: 125px"
+                    />
                 </div>
             </div>
-        </div>
+            <div class="offset-lg-1 col-lg-7 text-right">
+                some sort of nav here that just scrolls them to samples, about and contact. Doesn't
+                have to be visible on mobile, probably overkill on small screens. Font might be cool
+                to match the sort of bold, impact-ish font of the 'sheer panic' logo
+            </div>
+        </div> -->
         <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="text-center text-light heroImg">
-                You've created and recorded your art; now let's make something special. <br />(put
-                this text aligned middle, make the background img black and white and actually fit
-                lol... also cool with you finding a free image that's like a mix console or
-                something that's pro looking without being a gear brag - make that font attention
-                grabby and strong)
+        <div class="row heroImg">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 class="text-center text-light p-5">
+                    You've created and recorded your art; now let's make something special.
+                </h1>
             </div>
         </div>
         <div class="container">
