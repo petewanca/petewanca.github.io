@@ -1,4 +1,12 @@
 /* NAV STYLING */
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    background: white;
+    width: 100%;
+}
+
 #nav-container {
     justify-content: normal;
 }
@@ -22,6 +30,8 @@
 
 .navbar-brand {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-nav a {
@@ -76,4 +86,10 @@
     height: 750px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    padding-top: 25vh;
+}
+
+@media screen and (max-width: 992px) {
+    #nav-container {
+    }
 }
