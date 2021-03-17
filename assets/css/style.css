@@ -1,4 +1,17 @@
-/* NAV STYLING */
+/* DOCUMENT */
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV */
 #nav {
     position: fixed;
     top: 0;
@@ -35,7 +48,6 @@
 }
 
 .navbar-nav a {
-    text-decoration: none;
     color: black;
 }
 
@@ -77,19 +89,24 @@
     height: 100% !important;
 }
 
-.heroImg {
+/* MARQUE */
+.marque-image {
     background: url("../images/console2.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 750px;
+    background-position: -15rem;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    padding-top: 25vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-@media screen and (max-width: 992px) {
-    #nav-container {
-    }
+h1 {
+    font-size: 7vh;
+    padding: 1rem;
 }

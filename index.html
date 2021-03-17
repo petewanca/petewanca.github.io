@@ -14,6 +14,11 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
@@ -45,13 +50,13 @@
                 >
                     <ul class="navbar-nav justify-content-around">
                         <li class="nav-item">
-                            <a href="#about"> About </a>
+                            <a href="#about"> ABOUT </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#samples"> Samples </a>
+                            <a href="#samples"> SAMPLES </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact"> Contact </a>
+                            <a href="#contact"> CONTACT </a>
                         </li>
                     </ul>
                 </div>
@@ -84,73 +89,26 @@
         </nav>
 
         <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <div class="row heroImg">
-            <div class="col-12">
-                <h1 class="text-center text-light p-5">
-                    You've created and recorded your art; now let's make
-                    something special.
-                </h1>
-            </div>
-        </div>
-        <div class="container">
-            <!-- PIC AND AUDIO AREA -->
-            <div class="row" id="samples">
-                <div class="offset-lg-1 col-lg-4">
+        <section class="marque-image mb-5">
+            <h1>
+                You've created and recorded your art.<br />Now, let's make
+                something special.
+            </h1>
+        </section>
+
+        <!-- PIC AND AUDIO AREA -->
+        <section class="container mb-5" id="about">
+            <div class="row">
+                <div class="col-lg-6 text-center">
                     <img
-                        class="rounded border shadow"
-                        src="./assets/images/pete.jpg"
-                        alt="Pete in the snow"
+                        class="rounded border shadow img-fluid mb-5"
+                        src="./assets/images/headshot.jpeg"
+                        alt="Headshot of Pete Wanca"
                         height="400"
                     />
                 </div>
                 <div class="col-lg-6">
-                    <h5>Here's some tracks I've mixed.</h5>
-                    <!-- SONG 1 -->
-                    <div>
-                        <figure>
-                            <figcaption>
-                                Running Away by Bucky Shorts
-                            </figcaption>
-                            <audio
-                                controls
-                                src="./assets/audio/running-away-master.mp3"
-                            >
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                    </div>
-                    <!-- SONG 2 -->
-                    <div>
-                        <figure>
-                            <figcaption>Sunny Pry by Body Origami</figcaption>
-                            <audio
-                                controls
-                                src="./assets/audio/sunny-pry-master.mp3"
-                            >
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                    </div>
-                    <!-- SONG NOTES -->
-                    <div class="font-italic">
-                        The versions found here are my exclusive mixes. These
-                        are meant to serve as examples for how I approach songs
-                        should you want to compare them to versions found on
-                        Spotify, Apple Music, etc.
-                    </div>
-                </div>
-            </div>
-
-            <!-- ABOUT -->
-            <div class="row" id="about">
-                <div class="col-lg-8">
                     <h2>About</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8">
                     <p>
                         I've spent my whole life in and around music. I've
                         worked as a player, tech, recording engineer, and mixing
@@ -172,85 +130,96 @@
                     </p>
                 </div>
             </div>
+        </section>
 
-            <!-- CONTACT -->
-            <div class="row" id="contact">
-                <div class="col-lg-8">
-                    <h2>Contact</h2>
-                </div>
+        <!-- ABOUT -->
+        <section class="container mb-5" id="work">
+            <h2>MY WORK</h2>
+            <!-- SONG 1 -->
+            <figure>
+                <figcaption>Running Away by Bucky Shorts</figcaption>
+                <audio controls src="./assets/audio/running-away-master.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <!-- SONG 2 -->
+            <figure>
+                <figcaption>Sunny Pry by Body Origami</figcaption>
+                <audio controls src="./assets/audio/sunny-pry-master.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <!-- SONG NOTES -->
+            <p class="font-italic">
+                The versions found here are my exclusive mixes. These are meant
+                to serve as examples for how I approach songs should you want to
+                compare them to versions found on Spotify, Apple Music, etc.
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="container mb-5" id="contact">
+            <h2>Contact</h2>
+            <p>
+                If you'd like to get in touch about your next project, fill out
+                the form below. I can't wait to learn more about what you're
+                working on.
+            </p>
+
+            <!-- !!! If you want to update the form to go to your own formspree account for testing, that's totally cool. prob easier that way too initially
+
+if you'd like, you could try making the form an actual button, and when you click it, a modal pops up that's the form instead. whatever you think looks best. stagnant forms (the way i do them) always look bad lol -->
+            <div>
+                <form
+                    class="shadow rounded"
+                    action="https://formspree.io/f/mqkgrwvr"
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="John Dorian"
+                            name="name"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter email"
+                            name="reply to"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea
+                            name="message"
+                            class="form-control"
+                            rows="3"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <small class="form-text text-muted">
+                        This goes straight to my inbox - nowhere else. I will
+                        never spam you.
+                    </small>
+                </form>
             </div>
-            <div class="row">
-                <div class="col-lg-8">
-                    <p>
-                        If you'd like to get in touch about your next project,
-                        fill out the form below. I can't wait to learn more
-                        about what you're working on.
-                    </p>
-                    <h4>
-                        !!! If you want to update the form to go to your own
-                        formspree account for testing, that's totally cool. prob
-                        easier that way too initially
-                    </h4>
-                    <h5>
-                        if you'd like, you could try making the form an actual
-                        button, and when you click it, a modal pops up that's
-                        the form instead. whatever you think looks best.
-                        stagnant forms (the way i do them) always look bad lol
-                    </h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8">
-                    <form
-                        class="shadow rounded"
-                        action="https://formspree.io/f/mqkgrwvr"
-                        method="POST"
-                    >
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="John Dorian"
-                                name="name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label>Email address</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                placeholder="Enter email"
-                                name="reply to"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea
-                                name="message"
-                                class="form-control"
-                                rows="3"
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark">
-                            Submit
-                        </button>
-                        <small class="form-text text-muted">
-                            This goes straight to my inbox - nowhere else. I
-                            will never spam you.
-                        </small>
-                    </form>
-                </div>
-            </div>
-        </div>
+        </section>
+
         <!-- END OF MAIN PAGE CONTAINER -->
 
         <!-- FOOTER SECTION -->
-        <footer class="bg-dark text-light">
-            <div class="row text-center container-fluid">
+        <footer class="bg-dark text-light text-center container-fluid">
+            <div class="row">
                 <div class="col-lg-6">
                     <div>
                         Made by
