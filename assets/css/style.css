@@ -1,3 +1,72 @@
+/* NAV STYLING */
+#nav-container {
+    justify-content: normal;
+}
+
+#hamburger-menu {
+    border: none;
+    text-align: left;
+}
+
+#hamburger-menu:focus {
+    box-shadow: none;
+}
+
+#hamburger-menu > span {
+    padding: 1px 6px;
+}
+
+.navbar-nav {
+    width: 50%;
+}
+
+.navbar-brand {
+    text-align: center;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav {
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#close-mobile-menu {
+    align-self: flex-end;
+    margin: 1rem 1rem 0 0;
+    border: none;
+    padding: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.bi.bi-x {
+    margin: initial;
+}
+
+.collapsing.show {
+    height: 100% !important;
+}
+
 .heroImg {
     background: url("../images/console2.jpg");
     -webkit-background-size: cover;
