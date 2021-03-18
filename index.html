@@ -3,263 +3,289 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Professional Portfolio of Pete Wanca"
+        />
         <title>Pete Wanca</title>
+        <link href="https://petewanca.com/" rel="canonical" />
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
             crossorigin="anonymous"
         />
-        <style>
-            .heroImg {
-                background: url('./images/console2.jpg');
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                height: 750px;
-                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                filter: grayscale(100%);
-            }
-        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
         <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg m-0 p-4">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <img
-                    src="./images/sheerpanic2.png"
-                    alt="sheer panic studios image"
-                    style="height: 125px"
-                />
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#samples">Samples</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <nav id="nav" class="navbar navbar-light navbar-expand-lg">
+            <div id="nav-container" class="container-fluid">
+                <div class="col-2 d-lg-none">
+                    <button
+                        id="hamburger-menu"
+                        class="navbar-toggler"
+                        type="button"
+                        aria-controls="mobile-navbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand col-8 col-lg-3" href="#">
+                    <img
+                        src="./assets/images/sheerpanic2.png"
+                        alt="Sheer Panic Studio Logo"
+                        height="80"
+                    />
+                </a>
+                <div
+                    class="d-lg-show d-none justify-content-end navbar-collapse"
+                >
+                    <ul class="navbar-nav justify-content-around">
+                        <li class="nav-item">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work">WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="mobile-navbar" class="d-lg-none mobile-nav">
+                    <span
+                        id="close-mobile-menu"
+                        class="navbar-toggler"
+                        role="button"
+                        aria-controls="mobile-navbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="bi bi-x"> </i>
+                    </span>
+
+                    <ul
+                        class="navbar-nav px-3 mb-2 mb-lg-0"
+                        id="mobile-nav-container"
+                    >
+                        <li class="nav-item mobile-nav-item">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item mobile-nav-item">
+                            <a href="#work">WORK</a>
+                        </li>
+                        <li class="nav-item mobile-nav-item">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <!-- <div class="row mt-2">
-            <div class="col-lg-4 col-12 col-sm-12 col-md-4">
-                <div class="align-middle">
-                    <img
-                        src="./images/sheerpanic2.png"
-                        alt="sheer panic studios image"
-                        style="height: 125px"
-                    />
-                </div>
-            </div>
-            <div class="offset-lg-1 col-lg-7 text-right">
-                some sort of nav here that just scrolls them to samples, about and contact. Doesn't
-                have to be visible on mobile, probably overkill on small screens. Font might be cool
-                to match the sort of bold, impact-ish font of the 'sheer panic' logo
-            </div>
-        </div> -->
         <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <div class="row heroImg">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h1 class="text-center text-light p-5">
-                    You've created and recorded your art; now let's make something special.
-                </h1>
-            </div>
-        </div>
-        <div class="container">
-            <!-- PIC AND AUDIO AREA -->
-            <div class="row my-4">
-                <div class="offset-lg-1 col-lg-4">
-                    <img
-                        class="rounded border shadow"
-                        src="./images/pete.jpg"
-                        alt="Pete in the snow"
-                        style="height: 400px"
-                    />
+        <section class="marque-image px-md-5 mb-5">
+            <h1>
+                You've created and recorded your art.<br />Now, let's make
+                something special.
+            </h1>
+        </section>
+
+        <!-- PIC AND AUDIO AREA -->
+        <section class="container mb-5" id="about">
+            <div class="row">
+                <div class="col-12 col-lg-10 m-auto">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img
+                                class="headshot rounded border shadow img-fluid mb-5"
+                                src="./assets/images/headshot.jpeg"
+                                alt="Headshot of Pete Wanca"
+                            />
+                        </div>
+                        <div class="col-md-6">
+                            <h2>ABOUT</h2>
+                            <p>
+                                I've spent my whole life in and around music.
+                                I've worked as a player, tech, recording
+                                engineer, and mixing engineer. My
+                                <span style="text-decoration: underline"
+                                    >focus and service</span
+                                >
+                                is mix engineering.
+                            </p>
+                            <p>
+                                I only offer mix engineering services because
+                                (1) its my favorite way to work with musicians
+                                and (2) narrowing my focus enables me to offer a
+                                better end product to my clients.
+                            </p>
+                            <p>
+                                I will work with you to understand the vision
+                                for your art help create something you can be
+                                proud of.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="ml-4 col-lg-6">
-                    <h5 class="m-3">Here's some tracks I've mixed.</h5>
-                    <!-- SONG 1 -->
-                    <div class="m-3">
-                        <figure>
-                            <figcaption class="mb-1">Running Away by Bucky Shorts</figcaption>
-                            <audio controls src="./media/running-away-master.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                    </div>
-                    <!-- SONG 2 -->
-                    <div class="m-3">
-                        <figure>
-                            <figcaption class="mb-1">Sunny Pry by Body Origami</figcaption>
-                            <audio controls src="./media/sunny-pry-master.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                    </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="container px-md-5 mb-5" id="work">
+            <div class="row">
+                <div class="col-12 col-lg-9 m-auto">
+                    <h2>MY WORK</h2>
                     <!-- SONG NOTES -->
-                    <div class="font-italic">
-                        The versions found here are my exclusive mixes. These are meant to serve as
-                        examples for how I approach songs should you want to compare them to
-                        versions found on Spotify, Apple Music, etc.
+                    <p class="font-italic">
+                        The versions found here are my exclusive mixes. These
+                        are meant to serve as examples for how I approach songs
+                        should you want to compare them to versions found on
+                        Spotify, Apple Music, etc.
+                    </p>
+                    <!-- SONG 1 -->
+                    <div class="row">
+                        <figure class="col-12 col-md-6 text-center">
+                            <figcaption>
+                                Running Away by Bucky Shorts
+                            </figcaption>
+                            <audio
+                                controls
+                                src="./assets/audio/running-away-master.mp3"
+                            >
+                                Your browser does not support the
+                                <code>audio</code> element.
+                            </audio>
+                        </figure>
+                        <!-- SONG 2 -->
+                        <figure class="col-12 col-md-6 text-center">
+                            <figcaption>Sunny Pry by Body Origami</figcaption>
+                            <audio
+                                controls
+                                src="./assets/audio/sunny-pry-master.mp3"
+                            >
+                                Your browser does not support the
+                                <code>audio</code> element.
+                            </audio>
+                        </figure>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- ABOUT -->
-            <div class="row my-3 text-left border-top pt-3">
-                <div class="offset-lg-1 col-lg-8">
-                    <h2>About</h2>
-                </div>
-            </div>
-            <div class="row my-3 text-left">
-                <div class="offset-lg-1 col-lg-8">
-                    <p>
-                        I've spent my whole life in and around music. I've worked as a player, tech,
-                        recording engineer, and mixing engineer. My
-                        <span style="text-decoration: underline">focus and service</span> is mix
-                        engineering.
-                    </p>
-                    <p>
-                        I only offer mix engineering services because (1) its my favorite way to
-                        work with musicians and (2) narrowing my focus enables me to offer a better
-                        end product to my clients.
-                    </p>
-                    <p>
-                        I will work with you to understand the vision for your art help create
-                        something you can be proud of.
-                    </p>
-                </div>
+        <!-- CONTACT -->
+        <section class="container px-md-5 mb-5" id="contact">
+            <div class="col-12 col-lg-9 m-auto">
+                <h2>CONTACT</h2>
+                <p>
+                    If you'd like to get in touch about your next project, fill
+                    out the form below. I can't wait to learn more about what
+                    you're working on.
+                </p>
             </div>
 
-            <!-- CONTACT -->
-            <div class="row my-3 text-right border-top pt-3">
-                <div class="offset-lg-3 col-lg-8">
-                    <h2>Contact</h2>
-                </div>
+            <!-- !!! If you want to update the form to go to your own formspree account for testing, that's totally cool. prob easier that way too initially
+
+if you'd like, you could try making the form an actual button, and when you click it, a modal pops up that's the form instead. whatever you think looks best. stagnant forms (the way i do them) always look bad lol -->
+            <div class="container g-0">
+                <form
+                    class="col-12 col-lg-9 m-auto"
+                    action="https://formspree.io/f/mqkgrwvr"
+                    method="POST"
+                >
+                    <div class="form-group mb-3">
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="John Dorian"
+                            name="name"
+                            required
+                        />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Email address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter email"
+                            name="reply to"
+                            required
+                        />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Message</label>
+                        <textarea
+                            name="message"
+                            class="form-control"
+                            rows="3"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark mb-3">
+                        Submit
+                    </button>
+                    <small class="form-text text-muted float-end mt-0">
+                        This goes straight to my inbox - nowhere else. I will
+                        never spam you.
+                    </small>
+                </form>
             </div>
-            <div class="row my-3 text-right">
-                <div class="offset-lg-3 col-lg-8">
-                    <p>
-                        If you'd like to get in touch about your next project, fill out the form
-                        below. I can't wait to learn more about what you're working on.
-                    </p>
-                    <h4>
-                        !!! If you want to update the form to go to your own formspree account for
-                        testing, that's totally cool. prob easier that way too initially
-                    </h4>
-                    <h5>
-                        if you'd like, you could try making the form an actual button, and when you
-                        click it, a modal pops up that's the form instead. whatever you think looks
-                        best. stagnant forms (the way i do them) always look bad lol
-                    </h5>
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="offset-lg-2 col-lg-8">
-                    <form
-                        class="mt-2 shadow p-5 rounded"
-                        action="https://formspree.io/f/mqkgrwvr"
-                        method="POST"
-                    >
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="John Dorian"
-                                name="name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label>Email address</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                placeholder="Enter email"
-                                name="reply to"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea
-                                name="message"
-                                class="form-control"
-                                rows="3"
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                        <small class="mt-3 form-text text-muted">
-                            This goes straight to my inbox - nowhere else. I will never spam you.
-                        </small>
-                    </form>
-                </div>
-            </div>
-        </div>
+        </section>
+
         <!-- END OF MAIN PAGE CONTAINER -->
 
         <!-- FOOTER SECTION -->
-        <footer class="bg-dark text-light mt-5">
-            <div class="row text-center container-fluid">
-                <div class="col-lg-6">
-                    <div class="p-5">
-                        Made by
-                        <a href="https://www.linkedin.com/in/terrencemahnken/" target="_blank"
-                            >Tear-Bear</a
-                        >
-                        | &#169; 2021 Pete Wanca
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div>
-                        insta logo that links in a new tab to instagram.com/petewanca and another fb
-                        logo that links to facebook.com/petewancamusic/
-                    </div>
-                </div>
+        <footer class="bg-dark text-light text-center container-fluid p-3">
+            <p class="mb-2">&#169;2021 Pete Wanca</p>
+            <div class="mb-2">
+                <a
+                    class="footer-link"
+                    href="https://facebook.com/pete.wanca"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="p-3 bi bi-facebook"></i>
+                </a>
+                <a
+                    class="footer-link"
+                    href="https://instagram.com/petewanca"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="p-3 bi bi-instagram"></i>
+                </a>
             </div>
+            <small class="editor">
+                Edited by
+                <a
+                    href="https://terrence.codes"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Tear-Bear</a
+                >
+            </small>
         </footer>
 
         <!-- BOOTSTRAP JAVASCRIPT/JQUERY -->
         <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"
         ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
-        ></script>
-        <script type="text/javascript">
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
