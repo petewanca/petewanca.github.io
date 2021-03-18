@@ -16,6 +16,10 @@ section {
     scroll-margin: 106px;
 }
 
+h2 {
+    letter-spacing: 1px;
+}
+
 /* NAV */
 #nav {
     position: fixed;
@@ -44,6 +48,11 @@ section {
 
 .navbar-nav {
     width: 50%;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
 }
 
 .navbar-brand {
