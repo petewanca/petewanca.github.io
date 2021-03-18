@@ -124,9 +124,29 @@ h1 {
     padding: 1rem;
 }
 
+/* CONTACT */
+::placeholder {
+    font-family: "Raleway", sans-serif;
+}
+
 /* ABOUT */
 @media screen and (min-width: 1200px) {
     .headshot {
         width: 75%;
     }
+}
+
+/* FOOTER */
+.footer-link,
+.footer-link:hover {
+    color: white;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.editor,
+.editor > a {
+    color: #4f565c;
 }
