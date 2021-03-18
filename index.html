@@ -50,13 +50,13 @@
                 >
                     <ul class="navbar-nav justify-content-around">
                         <li class="nav-item">
-                            <a href="#about"> ABOUT </a>
+                            <a href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#samples"> SAMPLES </a>
+                            <a href="#work">WORK</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact"> CONTACT </a>
+                            <a href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -73,15 +73,18 @@
                         <i class="bi bi-x"> </i>
                     </span>
 
-                    <ul class="navbar-nav px-3 mb-2 mb-lg-0">
+                    <ul
+                        class="navbar-nav px-3 mb-2 mb-lg-0"
+                        id="mobile-nav-container"
+                    >
                         <li class="nav-item mobile-nav-item">
-                            <a href="#about"> About </a>
+                            <a href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item mobile-nav-item">
-                            <a href="#samples"> Samples </a>
+                            <a href="#work">SAMPLES</a>
                         </li>
                         <li class="nav-item mobile-nav-item">
-                            <a href="#contact"> Contact </a>
+                            <a href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +92,7 @@
         </nav>
 
         <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <section class="marque-image mb-5">
+        <section class="marque-image px-md-5 mb-5">
             <h1>
                 You've created and recorded your art.<br />Now, let's make
                 something special.
@@ -99,15 +102,14 @@
         <!-- PIC AND AUDIO AREA -->
         <section class="container mb-5" id="about">
             <div class="row">
-                <div class="col-lg-6 text-center">
+                <div class="col-md-6 text-center">
                     <img
-                        class="rounded border shadow img-fluid mb-5"
+                        class="headshot rounded border shadow img-fluid mb-5"
                         src="./assets/images/headshot.jpeg"
                         alt="Headshot of Pete Wanca"
-                        height="400"
                     />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h2>About</h2>
                     <p>
                         I've spent my whole life in and around music. I've
@@ -133,34 +135,39 @@
         </section>
 
         <!-- ABOUT -->
-        <section class="container mb-5" id="work">
+        <section class="container px-md-5 mb-5" id="work">
             <h2>MY WORK</h2>
-            <!-- SONG 1 -->
-            <figure>
-                <figcaption>Running Away by Bucky Shorts</figcaption>
-                <audio controls src="./assets/audio/running-away-master.mp3">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </figure>
-            <!-- SONG 2 -->
-            <figure>
-                <figcaption>Sunny Pry by Body Origami</figcaption>
-                <audio controls src="./assets/audio/sunny-pry-master.mp3">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </figure>
             <!-- SONG NOTES -->
             <p class="font-italic">
                 The versions found here are my exclusive mixes. These are meant
                 to serve as examples for how I approach songs should you want to
                 compare them to versions found on Spotify, Apple Music, etc.
             </p>
+            <!-- SONG 1 -->
+            <div class="row">
+                <figure class="col-12 col-md-6 text-center">
+                    <figcaption>Running Away by Bucky Shorts</figcaption>
+                    <audio
+                        controls
+                        src="./assets/audio/running-away-master.mp3"
+                    >
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </figure>
+                <!-- SONG 2 -->
+                <figure class="col-12 col-md-6 text-center">
+                    <figcaption>Sunny Pry by Body Origami</figcaption>
+                    <audio controls src="./assets/audio/sunny-pry-master.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </figure>
+            </div>
         </section>
 
         <!-- CONTACT -->
-        <section class="container mb-5" id="contact">
+        <section class="container px-md-5 mb-5" id="contact">
             <h2>Contact</h2>
             <p>
                 If you'd like to get in touch about your next project, fill out
@@ -218,27 +225,24 @@ if you'd like, you could try making the form an actual button, and when you clic
         <!-- END OF MAIN PAGE CONTAINER -->
 
         <!-- FOOTER SECTION -->
-        <footer class="bg-dark text-light text-center container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div>
-                        Made by
-                        <a
-                            href="https://www.linkedin.com/in/terrencemahnken/"
-                            target="_blank"
-                            >Tear-Bear</a
-                        >
-                        | &#169; 2021 Pete Wanca
-                    </div>
+        <footer class="bg-dark text-light text-center container-fluid p-md-3">
+            <div class="d-flex justify-content-md-center">
+                <div class="mx-3">
+                    <p class="m-0">&#169;2021 Pete Wanca</p>
                 </div>
-                <div class="col-lg-6">
-                    <div>
-                        insta logo that links in a new tab to
-                        instagram.com/petewanca and another fb logo that links
-                        to facebook.com/petewancamusic/
-                    </div>
+                <div class="mx-3">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
                 </div>
             </div>
+            <small>
+                Made by
+                <a
+                    href="https://www.linkedin.com/in/terrencemahnken/"
+                    target="_blank"
+                    >Tear-Bear</a
+                >
+            </small>
         </footer>
 
         <!-- BOOTSTRAP JAVASCRIPT/JQUERY -->
