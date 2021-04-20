@@ -1,256 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100 w-100">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Professional Portfolio of Pete Wanca" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Professional Portfolio of Pete Wanca"
+        />
         <title>Pete Wanca</title>
         <link href="https://petewanca.com/" rel="canonical" />
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway&display=swap"
-            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
         />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
-        <!-- HEADER -->
-        <nav id="nav" class="navbar navbar-light navbar-expand-lg">
-            <div id="nav-container" class="container-fluid">
-                <a class="navbar-brand col-lg-3 m-auto" href="#">
-                    <img
-                        src="./assets/images/sheerpanic2.png"
-                        alt="Sheer Panic Studio Logo"
-                        height="80"
-                    />
-                </a>
-                <div
-                    class="d-lg-none"
-                    style="position: absolute; right: 1.5rem"
-                >
-                    <button
-                        id="hamburger-menu"
-                        class="navbar-toggler"
-                        type="button"
-                        aria-controls="mobile-navbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div
-                    class="d-lg-show d-none justify-content-end navbar-collapse"
-                >
-                    <ul class="navbar-nav justify-content-around">
-                        <li class="nav-item">
-                            <a href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#work">WORK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="mobile-navbar" class="d-lg-none mobile-nav">
-                    <span
-                        id="close-mobile-menu"
-                        class="navbar-toggler"
-                        role="button"
-                        aria-controls="mobile-navbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <i class="bi bi-x"> </i>
-                    </span>
-
-                    <ul class="navbar-nav px-3 mb-2 mb-lg-0" id="mobile-nav-container">
-                        <li class="nav-item mobile-nav-item">
-                            <a href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item mobile-nav-item">
-                            <a href="#work">WORK</a>
-                        </li>
-                        <li class="nav-item mobile-nav-item">
-                            <a href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <section class="marque-image px-md-5 mb-5">
-            <h1>You've created and recorded your art.<br />Now let's make something special.</h1>
-        </section>
-
-        <!-- PIC AND AUDIO AREA -->
-        <section class="container mb-5" id="about">
-            <div class="row">
-                <div class="col-12 col-lg-10 m-auto">
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <img
-                                class="headshot rounded border shadow img-fluid mb-5"
-                                src="./assets/images/headshot.jpeg"
-                                alt="Headshot of Pete Wanca"
-                            />
-                        </div>
-                        <div class="col-md-6">
-                            <h2>ABOUT</h2>
-                            <p>
-                                I've spent my whole life in and around music. I've worked as a
-                                player, tech, recording engineer, and mixing engineer. Now, my
-                                <span style="text-decoration: underline">focus and service</span>
-                                is mix engineering. My experience enables me to have a unique
-                                perspective on the creative process.
-                            </p>
-                            <p>
-                                I only offer mix engineering services because (1) its my favorite
-                                way to work with musicians and (2) narrowing my focus enables me to
-                                offer a better end product to my clients.
-                            </p>
-                            <p>
-                                I will work with you to understand the vision for your art and help
-                                create something you can be proud of. Let's make your music sound
-                                incredible!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="container px-md-5 mb-5" id="work">
-            <div class="row">
-                <div class="col-12 col-lg-9 m-auto">
-                    <h2>MY WORK</h2>
-                    <!-- SONG NOTES -->
-                    <p class="font-italic">
-                        The versions found here are my exclusive mixes and are different from what's
-                        found elsewhere. These are meant to serve as examples for how I approach
-                        songs should you want to compare them to versions found on Spotify, Apple
-                        Music, etc.
-                    </p>
-                    <!-- SONG 1 -->
-                    <div class="row">
-                        <figure class="col-12 col-md-6 text-center">
-                            <figcaption>Running Away by Bucky Shorts</figcaption>
-                            <audio controls src="./assets/audio/running-away-master.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                        <!-- SONG 2 -->
-                        <figure class="col-12 col-md-6 text-center">
-                            <figcaption>Sunny Pry by Body Origami</figcaption>
-                            <audio controls src="./assets/audio/sunny-pry-master.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="container px-md-5 mb-5" id="contact">
-            <div class="col-12 col-lg-9 m-auto">
-                <h2>CONTACT</h2>
-                <p>
-                    If you'd like to get in touch about your next project, fill out the form below.
-                    I can't wait to learn more about what you're working on.
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Hello World</h1>
+                <p class="subtitle">
+                    My first website with <strong>Bulma</strong>!
                 </p>
             </div>
-            <div class="container g-0">
-                <form
-                    class="col-12 col-lg-9 m-auto"
-                    action="https://formspree.io/f/mqkgrwvr"
-                    method="POST"
-                >
-                    <div class="form-group mb-3">
-                        <label>Name</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="John Dorian"
-                            name="name"
-                            required
-                        />
-                    </div>
-                    <div class="form-group mb-3">
-                        <label>Email address</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Enter email"
-                            name="reply to"
-                            required
-                        />
-                    </div>
-                    <div class="form-group mb-3">
-                        <label>Message</label>
-                        <textarea name="message" class="form-control" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-dark mb-3">Submit</button>
-                    <small class="form-text text-muted float-end mt-0">
-                        This goes straight to my inbox - nowhere else. I will never spam you.
-                    </small>
-                </form>
-            </div>
         </section>
-
-        <!-- END OF MAIN PAGE CONTAINER -->
-
-        <!-- FOOTER SECTION -->
-        <footer class="bg-dark text-light text-center container-fluid p-3">
-            <p class="mb-2">&#169;2021 Pete Wanca</p>
-            <div class="mb-2">
-                <a
-                    class="footer-link"
-                    href="https://facebook.com/pete.wanca"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <i class="p-3 bi bi-facebook"></i>
-                </a>
-                <a
-                    class="footer-link"
-                    href="https://instagram.com/petewanca"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <i class="p-3 bi bi-instagram"></i>
-                </a>
-            </div>
-            <small class="editor">
-                Edited by
-                <a href="https://terrence.codes" target="_blank" rel="noreferrer">Tear-Bear</a>
-            </small>
-        </footer>
-
-        <!-- BOOTSTRAP JAVASCRIPT/JQUERY -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"
-        ></script>
-        <script src="./assets/js/script.js"></script>
     </body>
+    <script src="./assets/js/script.js"></script>
 </html>
