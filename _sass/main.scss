@@ -30,9 +30,49 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 $blue: #06bcef;
+$white: #eee;
 
-$primary: $blue;
+$primary: $green;
 
-html {
-    background-color: $blue;
+html,
+body {
+    background: url("../assets/images/console2_edit.png") no-repeat center
+        center fixed;
+    background-size: cover;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+}
+
+#enter {
+    #logo {
+        filter: invert(1);
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    div {
+        i {
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    #enter-btn {
+        color: $green;
+        font-size: 3rem;
+        font-weight: 900;
+    }
 }

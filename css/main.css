@@ -7133,5 +7133,35 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-html {
-  background-color: #06bcef; }
+html,
+body {
+  background: url("../assets/images/console2_edit.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 100vh; }
+  html main,
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; }
+
+#enter #logo {
+  filter: invert(1);
+  width: 50%;
+  margin-bottom: 2rem; }
+
+#enter div {
+  margin-bottom: 2rem; }
+  #enter div i {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
+#enter #enter-btn {
+  color: #48c774;
+  font-size: 3rem;
+  font-weight: 900; }
