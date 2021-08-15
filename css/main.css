@@ -7139,7 +7139,19 @@ body {
   background-size: cover;
   color: white;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
+  html .navbar,
+  body .navbar {
+    background-color: transparent;
+    height: 8rem;
+    margin: 3rem; }
+    html .navbar .navbar-brand,
+    body .navbar .navbar-brand {
+      filter: invert(1); }
+      html .navbar .navbar-brand img,
+      body .navbar .navbar-brand img {
+        max-height: 6rem; }
   html main,
   body main {
     display: flex;
@@ -7148,20 +7160,31 @@ body {
     text-align: center;
     height: 100%; }
 
-#enter #logo {
-  filter: invert(1);
-  width: 50%;
-  margin-bottom: 2rem; }
+a.navbar-item {
+  padding: 0 2rem;
+  color: white;
+  transition: color 0.25s ease; }
+  a.navbar-item:hover {
+    color: #48c793; }
+  a.navbar-item.social {
+    padding: 0 1rem; }
+  a.navbar-item i {
+    font-size: 1.5rem; }
 
-#enter div {
-  margin-bottom: 2rem; }
-  #enter div i {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem; }
-
-#enter #enter-btn {
-  color: #48c774;
-  font-size: 3rem;
-  font-weight: 900; }
+#enter {
+  display: none; }
+  #enter #logo {
+    filter: invert(1);
+    width: 50%;
+    margin-bottom: 2rem; }
+  #enter div {
+    margin-bottom: 2rem; }
+    #enter div i {
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+  #enter #enter-btn {
+    color: #48c793;
+    font-size: 3rem;
+    font-weight: 900; }

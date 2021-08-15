@@ -30,18 +30,32 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 $blue: #06bcef;
+$green: #48c793;
 $white: #eee;
 
 $primary: $green;
 
 html,
 body {
-    background: url("../assets/images/console2_edit.png") no-repeat center
-        center fixed;
+    background: url("../assets/images/console2_edit.png") no-repeat center center fixed;
     background-size: cover;
     color: white;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+
+    .navbar {
+        background-color: transparent;
+        height: 8rem;
+        margin: 3rem;
+
+        .navbar-brand {
+            filter: invert(1);
+            img {
+                max-height: 6rem;
+            }
+        }
+    }
 
     main {
         display: flex;
@@ -52,7 +66,26 @@ body {
     }
 }
 
+a.navbar-item {
+    padding: 0 2rem;
+    color: white;
+    transition: color 0.25s ease;
+
+    &:hover {
+        color: $green;
+    }
+
+    &.social {
+        padding: 0 1rem;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
 #enter {
+    display: none;
     #logo {
         filter: invert(1);
         width: 50%;
