@@ -172,3 +172,42 @@ a.navbar-item {
         font-weight: 100;
     }
 }
+
+#track-count {
+    width: 30px;
+    height: 50px;
+    margin: 0;
+    margin-left: 1rem;
+
+    * {
+        margin: 0;
+    }
+
+    div:first-child {
+        text-align: left;
+        line-height: 25px;
+        font-size: 25px;
+        margin-left: -5px;
+        margin-top: -4px;
+    }
+
+    div:last-child {
+        text-align: right;
+        line-height: 25px;
+        font-size: 25px;
+        margin-right: -5px;
+        margin-top: 6px;
+    }
+}
+
+#track-count::before {
+    content: " ";
+    margin-top: -50px;
+    position: relative;
+    top: 50px;
+    display: block;
+    height: 100%;
+    border-right: solid white 2px;
+    transform-origin: 100% 0;
+    transform: skew(-32deg);
+}
