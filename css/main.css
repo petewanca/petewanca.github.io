@@ -7197,8 +7197,12 @@ a.navbar-item {
   height: 100%;
   margin: 0 5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+  flex-direction: column; }
+  #home .columns:first-child {
+    margin-top: 15%;
+    flex: 3 1 auto; }
+  #home .columns:last-child {
+    flex: 1 1 auto; }
   #home div {
     align-items: center; }
 
@@ -7222,7 +7226,9 @@ a.navbar-item {
 #controls {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: flex-end; }
+  #controls * {
+    margin: 0 1rem; }
 
 .arrow {
   text-align: end; }
