@@ -173,7 +173,7 @@ a.navbar-item {
     }
 }
 
-#track-count {
+#track-count-display {
     width: 30px;
     height: 50px;
     margin: 0;
@@ -200,7 +200,7 @@ a.navbar-item {
     }
 }
 
-#track-count::before {
+#track-count-display::before {
     content: " ";
     margin-top: -50px;
     position: relative;

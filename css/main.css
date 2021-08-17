@@ -7235,27 +7235,27 @@ a.navbar-item {
   .arrow i {
     font-weight: 100; }
 
-#track-count {
+#track-count-display {
   width: 30px;
   height: 50px;
   margin: 0;
   margin-left: 1rem; }
-  #track-count * {
+  #track-count-display * {
     margin: 0; }
-  #track-count div:first-child {
+  #track-count-display div:first-child {
     text-align: left;
     line-height: 25px;
     font-size: 25px;
     margin-left: -5px;
     margin-top: -4px; }
-  #track-count div:last-child {
+  #track-count-display div:last-child {
     text-align: right;
     line-height: 25px;
     font-size: 25px;
     margin-right: -5px;
     margin-top: 6px; }
 
-#track-count::before {
+#track-count-display::before {
   content: " ";
   margin-top: -50px;
   position: relative;
