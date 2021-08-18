@@ -7174,23 +7174,23 @@ a.navbar-item {
   a.navbar-item i {
     font-size: 1.5rem; }
 
-#enter {
-  display: none; }
-  #enter #logo {
-    filter: invert(1);
-    width: 50%;
-    margin-bottom: 2rem; }
-  #enter div {
-    margin-bottom: 2rem; }
-    #enter div i {
-      display: block;
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1rem; }
-  #enter #enter-btn {
-    color: #48c793;
-    font-size: 3rem;
-    font-weight: 900; }
+#enter #logo {
+  filter: invert(1);
+  width: 50%;
+  margin-bottom: 2rem; }
+
+#enter div {
+  margin-bottom: 2rem; }
+  #enter div i {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
+#enter #enter-btn {
+  color: #48c793;
+  font-size: 3rem;
+  font-weight: 900; }
 
 #home {
   width: 100vw;
