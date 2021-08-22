@@ -13,12 +13,59 @@ homeEl.style.display = "none";
 navEl.style.display = "none";
 
 const enterBtn = document.getElementById("enter-btn");
+let soundWaveGraphic = document.getElementById("sound-wave");
 
-const soundWaveGraphic = document.getElementById("sound-wave");
+// Audio
+let currentTrackNumber = 0;
+let isPlaying = true;
+let audioPlayer = document.createElement("audio");
+audioPlayer.type = "audio/mpeg";
+audioPlayer.loop = true;
+audioPlayer.volume = 0.75;
 
 // FUNCTIONS
 handleNumeratorDisplay = () => {
     numerator.textContent = currentTrackNumber + 1;
+};
+
+handleSongDisplay = () => {
+    songTitleEl.textContent = audioMetadata[currentTrackNumber].title;
+    songArtistEl.textContent = `by ${audioMetadata[currentTrackNumber].artist}`;
+};
+
+loadTrack = (trackIndex) => {
+    // Load a new track
+    audioPlayer.src = `./assets/audio/${audioMetadata[trackIndex].filename}`;
+    audioPlayer.load();
+
+    // Update track details
+    handleSongDisplay();
+    handleNumeratorDisplay();
+};
+
+playPauseTrack = () => {
+    // Switch between playing and pausing
+    // depending on the current state
+    if (!isPlaying) playTrack();
+    else pauseTrack();
+};
+
+playTrack = () => {
+    // Play the loaded track
+    audioPlayer.play();
+    isPlaying = true;
+
+    // Replace stop png with playing gif
+    soundWaveGraphic.src = "./assets/images/sound_waves.gif";
+};
+
+pauseTrack = () => {
+    // Pause the loaded track
+    audioPlayer.pause();
+    isPlaying = false;
+
+    // Replace playing gif with stop png
+    soundWaveGraphic.src = "./assets/images/sound_stop.png";
 };
 
 // FUNCTION CALLS
@@ -30,40 +77,11 @@ enterBtn.addEventListener("click", () => {
     audioPlayer.play();
 });
 
-// Audio Player
-let currentTrackNumber = 0;
-const audioPlayer = new Audio();
-const audioSrc = document.createElement("source");
-audioSrc.src = `./assets/audio/${audioMetadata[currentTrackNumber].filename}`;
-audioSrc.type = "audio/mpeg";
-audioPlayer.autoplay = true;
-audioPlayer.loop = true;
-audioPlayer.volume = 0.75;
-audioPlayer.append(audioSrc);
-mainEl[0].append(audioPlayer);
-
 // Track Display
-songTitleEl.textContent = audioMetadata[currentTrackNumber].title;
-songArtistEl.textContent = audioMetadata[currentTrackNumber].artist;
-numerator.textContent = currentTrackNumber + 1;
 denominator.textContent = audioMetadata.length;
-
-// Sound Graphic Controls
-soundWaveGraphic.addEventListener("click", (event) => {
-    if (event.target.getAttribute("data-play") !== null) {
-        soundWaveGraphic.removeAttribute("data-play");
-        soundWaveGraphic.src = "./assets/images/sound_stop.png";
-        audioPlayer.pause();
-    } else {
-        soundWaveGraphic.setAttribute("data-play", "");
-        soundWaveGraphic.src = "./assets/images/sound_waves.gif";
-        audioPlayer.play();
-    }
-});
 
 // Change Track Control
 trackArrowEl.addEventListener("click", (event) => {
-    // handleNumeratorDisplay(event.target.dataset);
     const { direction } = event.target.dataset;
 
     if (direction === "forward") {
@@ -72,6 +90,7 @@ trackArrowEl.addEventListener("click", (event) => {
             trackArrowEl.classList.remove("fa-chevron-circle-right");
             trackArrowEl.classList.add("fa-chevron-circle-left");
             trackArrowEl.setAttribute("data-direction", "backward");
+            loadTrack(currentTrackNumber);
         }
     } else if (direction === "backward") {
         currentTrackNumber--;
@@ -79,8 +98,18 @@ trackArrowEl.addEventListener("click", (event) => {
             trackArrowEl.classList.remove("fa-chevron-circle-left");
             trackArrowEl.classList.add("fa-chevron-circle-right");
             trackArrowEl.setAttribute("data-direction", "forward");
+            loadTrack(currentTrackNumber);
         }
     }
-
     handleNumeratorDisplay();
+    handleSongDisplay();
 });
+
+soundWaveGraphic.addEventListener("click", () => {
+    playPauseTrack();
+});
+
+// Track Display
+handleNumeratorDisplay();
+handleSongDisplay();
+loadTrack(currentTrackNumber);
