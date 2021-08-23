@@ -69,7 +69,9 @@ body {
     }
 }
 
+.navbar-item,
 a.navbar-item {
+    cursor: pointer;
     padding: 0 2rem;
     color: white;
     transition: color 0.25s ease;
@@ -209,4 +211,38 @@ a.navbar-item {
     border-right: solid white 2px;
     transform-origin: 100% 0;
     transform: skew(-32deg);
+}
+
+#about {
+    width: 100vw;
+    height: 100%;
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        align-items: center;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    .bio {
+        text-align: left;
+
+        hr {
+            background-color: $green;
+            width: 25%;
+            height: 5px;
+            margin-left: 3px;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 5rem;
+        }
+    }
 }

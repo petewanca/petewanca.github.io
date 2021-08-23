@@ -3,6 +3,11 @@ const mainEl = document.getElementsByTagName("main");
 const enterEl = document.getElementById("enter");
 const homeEl = document.getElementById("home");
 const navEl = document.getElementById("nav");
+const homeLink = document.getElementById("home-link");
+const aboutLink = document.getElementById("about-link");
+const contactLink = document.getElementById("contact-link");
+const aboutEl = document.getElementById("about");
+const contactEl = document.getElementById("contact");
 const songTitleEl = document.getElementById("song-title");
 const songArtistEl = document.getElementById("song-artist");
 const numerator = document.getElementById("numerator");
@@ -11,11 +16,14 @@ const trackArrowEl = document.getElementById("track-arrow");
 
 homeEl.style.display = "none";
 navEl.style.display = "none";
+enterEl.style.display = "block";
+aboutEl.style.display = "none";
+contactEl.style.display = "none";
 
 const enterBtn = document.getElementById("enter-btn");
-let soundWaveGraphic = document.getElementById("sound-wave");
+const soundWaveGraphic = document.getElementById("sound-wave");
 
-// Audio
+// Audio Player
 let currentTrackNumber = 0;
 let isPlaying = true;
 let audioPlayer = document.createElement("audio");
@@ -35,7 +43,6 @@ handleSongDisplay = () => {
 
 loadTrack = (trackIndex) => {
     // Load a new track
-    console.log(isPlaying);
     isPlaying ? (audioPlayer.autoplay = true) : (audioPlayer.autoplay = false);
     audioPlayer.src = `./assets/audio/${audioMetadata[trackIndex].filename}`;
     audioPlayer.load();
@@ -71,12 +78,35 @@ pauseTrack = () => {
 };
 
 // FUNCTION CALLS
+
+// NAVIGATION
 // Enter Site Button
 enterBtn.addEventListener("click", () => {
     enterEl.style.display = "none";
     navEl.style.display = "flex";
     homeEl.style.display = "flex";
     audioPlayer.play();
+});
+
+// Home
+homeLink.addEventListener("click", () => {
+    homeEl.style.display = "flex";
+    aboutEl.style.display = "none";
+    contactEl.style.display = "none";
+});
+
+// About
+aboutLink.addEventListener("click", () => {
+    homeEl.style.display = "none";
+    aboutEl.style.display = "flex";
+    contactEl.style.display = "none";
+});
+
+// Contact
+contactLink.addEventListener("click", () => {
+    homeEl.style.display = "none";
+    aboutEl.style.display = "none";
+    contactEl.style.display = "flex";
 });
 
 // Track Display

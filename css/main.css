@@ -7163,14 +7163,19 @@ body {
     text-align: center;
     height: 100%; }
 
+.navbar-item,
 a.navbar-item {
+  cursor: pointer;
   padding: 0 2rem;
   color: white;
   transition: color 0.25s ease; }
+  .navbar-item:hover,
   a.navbar-item:hover {
     color: #48c793; }
+  .navbar-item.social,
   a.navbar-item.social {
     padding: 0 1rem; }
+  .navbar-item i,
   a.navbar-item i {
     font-size: 1.5rem; }
 
@@ -7265,3 +7270,26 @@ a.navbar-item {
   border-right: solid white 2px;
   transform-origin: 100% 0;
   transform: skew(-32deg); }
+
+#about {
+  width: 100vw;
+  height: 100%;
+  margin: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #about div {
+    align-items: center; }
+  #about img {
+    border-radius: 20px; }
+  #about .bio {
+    text-align: left; }
+    #about .bio hr {
+      background-color: #48c793;
+      width: 25%;
+      height: 5px;
+      margin-left: 3px;
+      margin-top: 0; }
+    #about .bio h1 {
+      font-weight: 900;
+      font-size: 5rem; }
