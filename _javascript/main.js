@@ -94,20 +94,26 @@ homeLink.addEventListener("click", () => {
     homeEl.style.display = "flex";
     aboutEl.style.display = "none";
     contactEl.style.display = "none";
+    contactLink.classList.remove("active");
+    aboutLink.classList.remove("active");
 });
 
 // About
 aboutLink.addEventListener("click", () => {
     homeEl.style.display = "none";
     aboutEl.style.display = "flex";
+    aboutLink.classList.add("active");
     contactEl.style.display = "none";
+    contactLink.classList.remove("active");
 });
 
 // Contact
 contactLink.addEventListener("click", () => {
     homeEl.style.display = "none";
     aboutEl.style.display = "none";
+    aboutLink.classList.remove("active");
     contactEl.style.display = "flex";
+    contactLink.classList.add("active");
 });
 
 // Track Display

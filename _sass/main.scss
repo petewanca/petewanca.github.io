@@ -74,12 +74,20 @@ a.navbar-item {
     color: white;
     transition: color 0.25s ease;
 
+    &.active {
+        color: $green;
+    }
+
     &:hover {
         color: $green;
     }
 
     &.social {
         padding: 0 1rem;
+    }
+
+    &:focus {
+        color: $white;
     }
 
     i {
@@ -245,5 +253,48 @@ a.navbar-item {
             font-size: 5rem;
             line-height: 5rem;
         }
+    }
+}
+
+#contact {
+    width: 100vw;
+    height: 75vh;
+    margin: 0 5rem;
+    display: flex;
+
+    .columns {
+        width: 100%;
+
+        .column {
+            text-align: left;
+        }
+    }
+
+    hr {
+        background-color: $green;
+        width: 25%;
+        height: 5px;
+        margin-left: 3px;
+        margin-top: 0.75rem;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    label {
+        color: $white;
+    }
+
+    .input,
+    .textarea {
+        background-color: $black;
+        color: $white;
+    }
+
+    ::placeholder {
+        color: #999;
     }
 }

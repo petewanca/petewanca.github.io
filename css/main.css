@@ -7167,12 +7167,18 @@ a.navbar-item {
   padding: 0 2rem;
   color: white;
   transition: color 0.25s ease; }
+  .navbar-item.active,
+  a.navbar-item.active {
+    color: #48c793; }
   .navbar-item:hover,
   a.navbar-item:hover {
     color: #48c793; }
   .navbar-item.social,
   a.navbar-item.social {
     padding: 0 1rem; }
+  .navbar-item:focus,
+  a.navbar-item:focus {
+    color: #eee; }
   .navbar-item i,
   a.navbar-item i {
     font-size: 1.5rem; }
@@ -7292,3 +7298,31 @@ a.navbar-item {
       font-weight: 900;
       font-size: 5rem;
       line-height: 5rem; }
+
+#contact {
+  width: 100vw;
+  height: 75vh;
+  margin: 0 5rem;
+  display: flex; }
+  #contact .columns {
+    width: 100%; }
+    #contact .columns .column {
+      text-align: left; }
+  #contact hr {
+    background-color: #48c793;
+    width: 25%;
+    height: 5px;
+    margin-left: 3px;
+    margin-top: 0.75rem; }
+  #contact h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 5rem; }
+  #contact label {
+    color: #eee; }
+  #contact .input,
+  #contact .textarea {
+    background-color: #0a0a0a;
+    color: #eee; }
+  #contact ::placeholder {
+    color: #999; }
