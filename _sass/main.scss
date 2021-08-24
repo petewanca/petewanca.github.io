@@ -52,10 +52,21 @@ body {
         padding: 3rem;
         width: 100%;
 
-        .navbar-brand {
-            filter: invert(1);
-            img {
-                max-height: 6rem;
+        #home-link {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            p:first-child {
+                font-weight: 900;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+
+            p:last-child {
+                font-weight: 200;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
             }
         }
     }
@@ -67,6 +78,18 @@ body {
         text-align: center;
         height: 100%;
     }
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 100;
 }
 
 .navbar-item,
@@ -98,12 +121,6 @@ a.navbar-item {
 }
 
 #enter {
-    #logo {
-        filter: invert(1);
-        width: 50%;
-        margin-bottom: 2rem;
-    }
-
     div {
         i {
             display: block;
@@ -249,12 +266,6 @@ a.navbar-item {
             margin-left: 3px;
             margin-top: 0;
         }
-
-        h1 {
-            font-weight: 900;
-            font-size: 5rem;
-            line-height: 5rem;
-        }
     }
 }
 
@@ -270,12 +281,6 @@ a.navbar-item {
         .column {
             text-align: left;
         }
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: 5rem;
-        line-height: 5rem;
     }
 
     hr {

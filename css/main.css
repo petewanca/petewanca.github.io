@@ -7149,12 +7149,21 @@ body {
     height: 25vh;
     padding: 3rem;
     width: 100%; }
-    html .navbar .navbar-brand,
-    body .navbar .navbar-brand {
-      filter: invert(1); }
-      html .navbar .navbar-brand img,
-      body .navbar .navbar-brand img {
-        max-height: 6rem; }
+    html .navbar #home-link,
+    body .navbar #home-link {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+      html .navbar #home-link p:first-child,
+      body .navbar #home-link p:first-child {
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1.5rem; }
+      html .navbar #home-link p:last-child,
+      body .navbar #home-link p:last-child {
+        font-weight: 200;
+        font-size: 1.5rem;
+        line-height: 1.5rem; }
   html main,
   body main {
     display: flex;
@@ -7162,6 +7171,16 @@ body {
     align-items: center;
     text-align: center;
     height: 100%; }
+
+h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 5rem; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 100; }
 
 .navbar-item,
 a.navbar-item {
@@ -7184,11 +7203,6 @@ a.navbar-item {
   .navbar-item i,
   a.navbar-item i {
     font-size: 1.5rem; }
-
-#enter #logo {
-  filter: invert(1);
-  width: 50%;
-  margin-bottom: 2rem; }
 
 #enter div {
   margin-bottom: 2rem; }
@@ -7296,10 +7310,6 @@ a.navbar-item {
       height: 5px;
       margin-left: 3px;
       margin-top: 0; }
-    #about .bio h1 {
-      font-weight: 900;
-      font-size: 5rem;
-      line-height: 5rem; }
 
 #contact {
   width: 100vw;
@@ -7310,10 +7320,6 @@ a.navbar-item {
     width: 100%; }
     #contact .columns .column {
       text-align: left; }
-  #contact h1 {
-    font-weight: 900;
-    font-size: 5rem;
-    line-height: 5rem; }
   #contact hr {
     background-color: #48c793;
     width: 25%;
