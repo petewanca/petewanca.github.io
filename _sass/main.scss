@@ -46,10 +46,8 @@ body {
 
     .navbar {
         background-color: transparent;
-        height: 14rem;
+        height: 25vh;
         padding: 3rem;
-        position: absolute;
-        z-index: 1000;
         width: 100%;
 
         .navbar-brand {
@@ -116,14 +114,13 @@ a.navbar-item {
 
 #home {
     width: 100vw;
-    height: 100%;
+    height: 75vh;
     margin: 0 5rem;
     display: flex;
     flex-direction: column;
 
     .columns:first-child {
-        margin-top: 15%;
-        flex: 3 1 auto;
+        flex: 2 1 auto;
     }
 
     .columns:last-child {
@@ -215,18 +212,21 @@ a.navbar-item {
 
 #about {
     width: 100vw;
-    height: 100%;
+    height: 75vh;
     margin: 0 5rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    div {
-        align-items: center;
+    .column:first-child {
+        margin-right: 2rem;
+    }
+
+    .column:last-child {
+        margin-left: 2rem;
     }
 
     img {
         border-radius: 20px;
+        margin-top: 0.75rem;
     }
 
     .bio {
@@ -243,6 +243,7 @@ a.navbar-item {
         h1 {
             font-weight: 900;
             font-size: 5rem;
+            line-height: 5rem;
         }
     }
 }

@@ -7144,10 +7144,8 @@ body {
   html .navbar,
   body .navbar {
     background-color: transparent;
-    height: 14rem;
+    height: 25vh;
     padding: 3rem;
-    position: absolute;
-    z-index: 1000;
     width: 100%; }
     html .navbar .navbar-brand,
     body .navbar .navbar-brand {
@@ -7199,13 +7197,12 @@ a.navbar-item {
 
 #home {
   width: 100vw;
-  height: 100%;
+  height: 75vh;
   margin: 0 5rem;
   display: flex;
   flex-direction: column; }
   #home .columns:first-child {
-    margin-top: 15%;
-    flex: 3 1 auto; }
+    flex: 2 1 auto; }
   #home .columns:last-child {
     flex: 1 1 auto; }
   #home div {
@@ -7273,15 +7270,16 @@ a.navbar-item {
 
 #about {
   width: 100vw;
-  height: 100%;
+  height: 75vh;
   margin: 0 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  #about div {
-    align-items: center; }
+  display: flex; }
+  #about .column:first-child {
+    margin-right: 2rem; }
+  #about .column:last-child {
+    margin-left: 2rem; }
   #about img {
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin-top: 0.75rem; }
   #about .bio {
     text-align: left; }
     #about .bio hr {
@@ -7292,4 +7290,5 @@ a.navbar-item {
       margin-top: 0; }
     #about .bio h1 {
       font-weight: 900;
-      font-size: 5rem; }
+      font-size: 5rem;
+      line-height: 5rem; }
