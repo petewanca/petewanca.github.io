@@ -45,6 +45,7 @@ body {
     overflow: hidden;
     display: block;
     margin: 0 auto;
+    cursor: default;
 
     .navbar {
         background-color: transparent;
@@ -136,6 +137,7 @@ a.navbar-item {
         color: $green;
         font-size: 3rem;
         font-weight: 900;
+        cursor: pointer;
     }
 }
 
@@ -177,6 +179,7 @@ a.navbar-item {
 }
 
 #sound-wave {
+    cursor: pointer;
     width: 20%;
 }
 
@@ -192,6 +195,7 @@ a.navbar-item {
 
 .arrow {
     text-align: end;
+    cursor: pointer;
 
     i {
         font-weight: 100;
