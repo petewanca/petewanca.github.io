@@ -7138,9 +7138,11 @@ body {
   background: url("../assets/images/console2_edit.png") no-repeat center center fixed;
   background-size: cover;
   color: white;
-  width: 100vw;
+  max-width: 1400px;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block;
+  margin: 0 auto; }
   html .navbar,
   body .navbar {
     background-color: transparent;
@@ -7308,16 +7310,18 @@ a.navbar-item {
     width: 100%; }
     #contact .columns .column {
       text-align: left; }
+  #contact h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 5rem; }
   #contact hr {
     background-color: #48c793;
     width: 25%;
     height: 5px;
     margin-left: 3px;
     margin-top: 0.75rem; }
-  #contact h1 {
-    font-weight: 900;
-    font-size: 5rem;
-    line-height: 5rem; }
+  #contact p {
+    margin-bottom: 0.75rem; }
   #contact label {
     color: #eee; }
   #contact .input,
@@ -7326,3 +7330,6 @@ a.navbar-item {
     color: #eee; }
   #contact ::placeholder {
     color: #999; }
+  #contact #submit {
+    background-color: #48c793;
+    color: #0a0a0a; }
