@@ -307,6 +307,10 @@ a.navbar-item {
     .textarea {
         background-color: $black;
         color: $white;
+
+        &:focus-visible {
+            border-color: $green;
+        }
     }
 
     ::placeholder {

@@ -7338,6 +7338,9 @@ a.navbar-item {
   #contact .textarea {
     background-color: #0a0a0a;
     color: #eee; }
+    #contact .input:focus-visible,
+    #contact .textarea:focus-visible {
+      border-color: #48c793; }
   #contact ::placeholder {
     color: #999; }
   #contact #submit {
