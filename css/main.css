@@ -7313,7 +7313,15 @@ a.navbar-item {
       width: 25%;
       height: 5px;
       margin-left: 3px;
-      margin-top: 0; }
+      margin-top: 0.75rem; }
+  #about h2 {
+    cursor: pointer;
+    color: #48c793;
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    display: inline;
+    float: right; }
 
 #contact {
   width: 100vw;

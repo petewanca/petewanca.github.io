@@ -7,6 +7,7 @@ const homeLink = document.getElementById("home-link");
 const aboutLink = document.getElementById("about-link");
 const contactLink = document.getElementById("contact-link");
 const aboutEl = document.getElementById("about");
+const aboutToContactLink = document.getElementById("about-to-contact");
 const contactEl = document.getElementById("contact");
 const songTitleEl = document.getElementById("song-title");
 const songArtistEl = document.getElementById("song-artist");
@@ -100,6 +101,7 @@ homeLink.addEventListener("click", () => {
 
 // About
 aboutLink.addEventListener("click", () => {
+    pauseTrack();
     homeEl.style.display = "none";
     aboutEl.style.display = "flex";
     aboutLink.classList.add("active");
@@ -109,6 +111,15 @@ aboutLink.addEventListener("click", () => {
 
 // Contact
 contactLink.addEventListener("click", () => {
+    pauseTrack();
+    homeEl.style.display = "none";
+    aboutEl.style.display = "none";
+    aboutLink.classList.remove("active");
+    contactEl.style.display = "flex";
+    contactLink.classList.add("active");
+});
+
+aboutToContactLink.addEventListener("click", () => {
     homeEl.style.display = "none";
     aboutEl.style.display = "none";
     aboutLink.classList.remove("active");
