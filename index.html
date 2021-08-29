@@ -14,6 +14,7 @@
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
         <link rel="stylesheet" href="css/main.css" />
     </head>
@@ -27,7 +28,7 @@
                 </a>
             </div>
 
-            <div id="navbar" class="navbar-menu">
+            <div class="navbar-menu">
                 <div class="navbar-end">
                     <p id="about-link" class="navbar-item">about</p>
 
@@ -46,11 +47,11 @@
 
         <main>
             <section id="enter">
-                <div>
+                <div id="enter-div1">
                     <h1>Pete Wanca</h1>
                     <h2>Mixing & Mastering<br />Engineer</h2>
                 </div>
-                <div>
+                <div id="enter-div2">
                     <i class="fas fa-headphones"></i>
                     To enhance your experience,<br />please turn on your sound.
                 </div>
@@ -60,8 +61,8 @@
             <section id="home">
                 <div class="columns">
                     <div class="column is-four-fifths song">
-                        <div id="song-title"></div>
-                        <div id="song-artist"></div>
+                        <div id="track-list"></div>
+                        <div id="artist-list"></div>
                     </div>
                     <div class="column arrow">
                         <i id="track-arrow" data-direction="forward" class="fal fa-chevron-circle-right fa-7x"></i>
@@ -77,7 +78,7 @@
                     </div>
                 </div>
             </section>
-            <section id="about">
+            <section id="about" class="animate__animated animate__delay-1s">
                 <div class="columns">
                     <div class="column is-half">
                         <img src="./assets/images/headshot.jpeg" alt="headshot of Pete Wanca smiling" />
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section id="contact" class="animate__animated animate__delay-1s">
                 <div class="columns">
                     <div class="column is-half is-offset-one-quarter">
                         <h1>Contact</h1>

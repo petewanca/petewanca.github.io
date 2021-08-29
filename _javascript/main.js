@@ -9,11 +9,16 @@ const contactLink = document.getElementById("contact-link");
 const aboutEl = document.getElementById("about");
 const aboutToContactLink = document.getElementById("about-to-contact");
 const contactEl = document.getElementById("contact");
+const trackListEl = document.getElementById("track-list");
+const artistListEl = document.getElementById("artist-list");
 const songTitleEl = document.getElementById("song-title");
 const songArtistEl = document.getElementById("song-artist");
 const numerator = document.getElementById("numerator");
 const denominator = document.getElementById("denominator");
 const trackArrowEl = document.getElementById("track-arrow");
+
+const enterDiv1 = document.getElementById("enter-div1");
+const enterDiv2 = document.getElementById("enter-div2");
 
 homeEl.style.display = "none";
 navEl.style.display = "none";
@@ -37,11 +42,6 @@ handleNumeratorDisplay = () => {
     numerator.textContent = currentTrackNumber + 1;
 };
 
-handleSongDisplay = () => {
-    songTitleEl.textContent = audioMetadata[currentTrackNumber].title;
-    songArtistEl.textContent = `by ${audioMetadata[currentTrackNumber].artist}`;
-};
-
 loadTrack = (trackIndex) => {
     // Load a new track
     isPlaying ? (audioPlayer.autoplay = true) : (audioPlayer.autoplay = false);
@@ -49,7 +49,6 @@ loadTrack = (trackIndex) => {
     audioPlayer.load();
 
     // Update track details
-    handleSongDisplay();
     handleNumeratorDisplay();
 };
 
@@ -83,8 +82,15 @@ pauseTrack = () => {
 // NAVIGATION
 // Enter Site Button
 enterBtn.addEventListener("click", () => {
+    enterEl.classList.add("animate__animated", "animate__fadeOut");
+});
+
+enterEl.addEventListener("animationend", () => {
     enterEl.style.display = "none";
+
+    navEl.classList.add("animate__animated", "animate__fadeIn", "animate__slow");
     navEl.style.display = "flex";
+    homeEl.classList.add("animate__animated", "animate__fadeIn", "animate__slow");
     homeEl.style.display = "flex";
     mainEl[0].style.height = "75vh";
     audioPlayer.play();
@@ -127,6 +133,20 @@ aboutToContactLink.addEventListener("click", () => {
     contactLink.classList.add("active");
 });
 
+audioMetadata.forEach((track, index) => {
+    const titleDiv = document.createElement("div");
+    titleDiv.setAttribute("class", "song-title");
+    if (index === 0) titleDiv.setAttribute("id", "active");
+    titleDiv.textContent = track.title;
+    trackListEl.append(titleDiv);
+
+    const artistDiv = document.createElement("div");
+    artistDiv.setAttribute("class", "song-artist");
+    if (index === 0) artistDiv.setAttribute("id", "active");
+    artistDiv.textContent = `by ${track.title}`;
+    artistListEl.append(artistDiv);
+});
+
 // Track Display
 denominator.textContent = audioMetadata.length;
 
@@ -150,7 +170,6 @@ trackArrowEl.addEventListener("click", (event) => {
         }
     }
     handleNumeratorDisplay();
-    handleSongDisplay();
     loadTrack(currentTrackNumber);
 });
 
@@ -160,5 +179,4 @@ soundWaveGraphic.addEventListener("click", () => {
 
 // Track Display
 handleNumeratorDisplay();
-handleSongDisplay();
 loadTrack(currentTrackNumber);
