@@ -16,6 +16,7 @@ const songArtistEl = document.getElementById("song-artist");
 const numerator = document.getElementById("numerator");
 const denominator = document.getElementById("denominator");
 const trackArrowEl = document.getElementById("track-arrow");
+const carouselEl = document.getElementById("carousel");
 
 const enterDiv1 = document.getElementById("enter-div1");
 const enterDiv2 = document.getElementById("enter-div2");
@@ -134,17 +135,27 @@ aboutToContactLink.addEventListener("click", () => {
 });
 
 audioMetadata.forEach((track, index) => {
+    const trackDiv = document.createElement("div");
+    trackDiv.setAttribute("class", `item-${index}`);
+
     const titleDiv = document.createElement("div");
     titleDiv.setAttribute("class", "song-title");
     if (index === 0) titleDiv.setAttribute("id", "active");
     titleDiv.textContent = track.title;
-    trackListEl.append(titleDiv);
+    trackDiv.append(titleDiv);
 
     const artistDiv = document.createElement("div");
     artistDiv.setAttribute("class", "song-artist");
     if (index === 0) artistDiv.setAttribute("id", "active");
     artistDiv.textContent = `by ${track.title}`;
-    artistListEl.append(artistDiv);
+    trackDiv.append(artistDiv);
+
+    carouselEl.append(trackDiv);
+});
+
+bulmaCarousel.attach("#carousel", {
+    slidesToScroll: 1,
+    slidesToShow: 4,
 });
 
 // Track Display

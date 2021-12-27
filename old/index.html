@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Professional Portfolio of Pete Wanca" />
         <title>Pete Wanca</title>
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
         <link href="https://petewanca.com/" rel="canonical" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
         <link
@@ -14,8 +15,14 @@
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+        <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
 
@@ -52,15 +59,15 @@
                     <h2>Mixing & Mastering<br />Engineer</h2>
                 </div>
                 <div id="enter-div2">
-                    <i class="fas fa-headphones"></i>
+                    <i class="fas fa-headphones-alt"></i>
                     To enhance your experience,<br />please turn on your sound.
                 </div>
                 <div id="enter-btn">ENTER</div>
             </section>
 
             <section id="home">
-                <div class="columns">
-                    <div class="column is-four-fifths song">
+                <div class="columns hero is-medium has-carousel">
+                    <div id="carousel" class="column is-four-fifths song hero-carousel">
                         <div id="track-list"></div>
                         <div id="artist-list"></div>
                     </div>
@@ -137,6 +144,7 @@
             </section>
         </main>
 
+        <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
         <script type="text/javascript" src="./assets/audio/metadata.js"></script>
         <script type="text/javascript" src="lib/main.js"></script>
     </body>

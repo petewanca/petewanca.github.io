@@ -28,6 +28,8 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma/sass/utilities/initial-variables";
+@charset "utf-8"
+@import "bulmaCarousel.sass"
 
 $blue: #06bcef;
 $green: #48c793;
@@ -46,6 +48,7 @@ body {
     display: block;
     margin: 0 auto;
     cursor: default;
+    font-family: "Nunito Sans", sans-serif;
 
     .navbar {
         background-color: transparent;

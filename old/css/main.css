@@ -7143,7 +7143,8 @@ body {
   overflow: hidden;
   display: block;
   margin: 0 auto;
-  cursor: default; }
+  cursor: default;
+  font-family: 'Nunito Sans', sans-serif; }
   html .navbar,
   body .navbar {
     background-color: transparent;
