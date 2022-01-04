@@ -1,0 +1,21 @@
+html,
+body {
+    background: url("../images/console2_edit.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    max-width: 1400px;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    cursor: default;
+    font-family: "Nunito Sans", sans-serif;
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+}

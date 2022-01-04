@@ -1,0 +1,9 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+$blue: #06bcef;
+$green: #48c793;
+$white: #eee;
+
+$primary: $green;
+
+@import "~bulma/bulma.sass";

@@ -1,0 +1,21 @@
+@import "styles/main";
+
+#enter {
+    div {
+        i {
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    #enter-btn {
+        color: $green;
+        font-size: 3rem;
+        font-weight: 900;
+        cursor: pointer;
+    }
+}
