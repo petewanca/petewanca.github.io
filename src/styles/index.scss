@@ -1,18 +1,18 @@
-@import "styles/main";
+@import "_variables";
 
-#enter {
+.enter {
     div {
-        i {
+        .enter-icon {
             display: block;
             text-align: center;
-            font-size: 2rem;
+            margin: 0 auto;
             margin-bottom: 1rem;
         }
 
         margin-bottom: 2rem;
     }
 
-    #enter-btn {
+    .enter-btn {
         color: $green;
         font-size: 3rem;
         font-weight: 900;
