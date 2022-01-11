@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "gatsby";
+
+// Styling
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadphonesAlt } from "@fortawesome/free-solid-svg-icons";
 import "styles/index.scss";
@@ -22,7 +25,9 @@ const IndexPage = () => (
             <p>To enhance your experience,</p>
             <p>please turn on your sound.</p>
         </div>
-        <div className="enter-btn">ENTER</div>
+        <Link className="enter-btn" to="/home">
+            ENTER
+        </Link>
     </main>
 );
 

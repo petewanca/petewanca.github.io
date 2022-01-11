@@ -1,4 +1,4 @@
-const audioMetadata = [
+export const audioMetadata = [
     {
         title: "Running Away",
         artist: "Bucky Shorts",
