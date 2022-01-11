@@ -6,7 +6,10 @@ import {
     faChevronCircleLeft,
     faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
-import "styles/about.scss";
+import "styles/home.scss";
+
+// Images
+import { StaticImage } from "gatsby-plugin-image";
 
 // Data
 import { audioMetadata } from "audio/metadata.js";
@@ -15,10 +18,8 @@ const HomePage = () => {
     const [isForward, setDirection] = useState(true);
     const [tracks, setTracks] = useState(audioMetadata);
 
-    console.log(tracks);
-
     return (
-        <main id="home">
+        <main className="home">
             <div className="columns">
                 <div className="column is-four-fifths song">
                     {tracks.map((track) => (
@@ -38,22 +39,17 @@ const HomePage = () => {
                                 : faChevronCircleLeft
                         }
                     />
-                    <i
-                        id="track-arrow"
-                        data-direction="forward"
-                        className="fal fa-chevron-circle-right fa-7x"></i>
                 </div>
             </div>
             <div className="columns">
-                <div id="controls" className="column is-3 is-offset-9">
-                    <img
-                        id="sound-wave"
-                        src="./assets/images/sound_waves.gif"
-                        alt="sound wave"
+                <div className="controls" className="column is-3 is-offset-9">
+                    <StaticImage
+                        src="../images/sound_waves.gif"
+                        alt="track controls"
                     />
-                    <div id="track-count-display">
-                        <div id="numerator"></div>
-                        <div id="denominator"></div>
+                    <div className="track-count-display">
+                        <div className="numerator"></div>
+                        <div className="denominator"></div>
                     </div>
                 </div>
             </div>
