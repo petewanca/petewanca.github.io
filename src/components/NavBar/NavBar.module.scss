@@ -6,12 +6,14 @@
   padding: 1rem;
   align-items: center;
   margin-top: 2rem;
+  justify-content: space-between;
 
-  .logoContainer {
-    flex-grow: 1;
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
   }
 
-  .navContainer {
+  .pageLinks {
     font-size: 1rem;
     margin: 0 1rem;
 

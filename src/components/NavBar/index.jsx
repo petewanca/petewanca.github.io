@@ -16,21 +16,23 @@ const NavBar = (props) => {
           <Logo />
         </Link>
       </div>
-      <div className={navBarStyle.navContainer}>
-        <Link className={navBarStyle.link} to="/about">
-          about
-        </Link>
-        <Link className={navBarStyle.link} to="/contact">
-          contact
-        </Link>
-      </div>
-      <div className={navBarStyle.navIcons}>
-        <a href="https://www.facebook.com/pete.wanca" target="_blank">
-          <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faFacebook} />
-        </a>
-        <a href="https://www.instagram.com/petewanca/" target="_blank">
-          <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faInstagram} />
-        </a>
+      <div className={navBarStyle.linkContainer}>
+        <div className={navBarStyle.pageLinks}>
+          <Link className={navBarStyle.link} to="/about">
+            about
+          </Link>
+          <Link className={navBarStyle.link} to="/contact">
+            contact
+          </Link>
+        </div>
+        <div className={navBarStyle.navIcons}>
+          <a href="https://www.facebook.com/pete.wanca" target="_blank">
+            <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faFacebook} />
+          </a>
+          <a href="https://www.instagram.com/petewanca/" target="_blank">
+            <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faInstagram} />
+          </a>
+        </div>
       </div>
     </nav>
   );
