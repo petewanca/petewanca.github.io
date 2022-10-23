@@ -1,0 +1,10 @@
+@import "styles/_variables.scss";
+
+.link {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
