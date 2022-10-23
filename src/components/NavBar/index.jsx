@@ -17,8 +17,12 @@ const NavBar = (props) => {
         </Link>
       </div>
       <div>
-        <Link className={navBarStyle.link} to="/about"></Link>
-        <Link className={navBarStyle.link} to="/contact"></Link>
+        <Link className={navBarStyle.link} to="/about">
+          About
+        </Link>
+        <Link className={navBarStyle.link} to="/contact">
+          Contact
+        </Link>
       </div>
       <div>
         <a href="" alt="" target="_blank">
