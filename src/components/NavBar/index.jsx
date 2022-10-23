@@ -10,26 +10,27 @@ import * as navBarStyle from "./NavBar.module.scss";
 
 const NavBar = (props) => {
   return (
-    <nav>
-      <div>
+    <nav className={navBarStyle.container}>
+      <div className={navBarStyle.logoContainer}>
         <Link className={navBarStyle.link} to="/home">
           <Logo />
         </Link>
       </div>
-      <div>
+      <div className={navBarStyle.navContainer}>
         <Link className={navBarStyle.link} to="/about">
-          About
+          about
         </Link>
         <Link className={navBarStyle.link} to="/contact">
-          Contact
+          contact
         </Link>
       </div>
-      <div>
-        <a href="" alt="" target="_blank">
-          <FontAwesomeIcon className={navBarStyle.link} size="3x" icon={faFacebook} />
-          <FontAwesomeIcon className={navBarStyle.link} size="3x" icon={faInstagram} />
+      <div className={navBarStyle.navIcons}>
+        <a href="https://www.facebook.com/pete.wanca" target="_blank">
+          <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faFacebook} />
         </a>
-        <a href="" alt="" target="_blank"></a>
+        <a href="https://www.instagram.com/petewanca/" target="_blank">
+          <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faInstagram} />
+        </a>
       </div>
     </nav>
   );
