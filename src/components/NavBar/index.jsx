@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
@@ -9,29 +9,45 @@ import Logo from "../Logo";
 import * as navBarStyle from "./NavBar.module.scss";
 
 const NavBar = (props) => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
-    <nav className={navBarStyle.container}>
-      <div className={navBarStyle.logoContainer}>
-        <Link className={navBarStyle.link} to="/home">
+    <nav className={`${navBarStyle.navContainer} navbar`} role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link className={`${navBarStyle.link} navbar-item`} to="/home">
           <Logo />
         </Link>
+
+        <a
+          onClick={() => setIsActive(!isActive)}
+          role="button"
+          className={`navbar-burger ${navBarStyle.hamburger}`}
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div className={navBarStyle.linkContainer}>
-        <div className={navBarStyle.pageLinks}>
-          <Link className={navBarStyle.link} to="/about">
+
+      <div id="navbar" className={`${isActive ? "is-active" : ""} ${navBarStyle.navbarMenu} navbar-menu`}>
+        <div className="navbar-end">
+          <Link className={`${navBarStyle.link} navbar-item`} to="/about">
             about
           </Link>
-          <Link className={navBarStyle.link} to="/contact">
+          <Link className={`${navBarStyle.link} navbar-item`} to="/contact">
             contact
           </Link>
-        </div>
-        <div className={navBarStyle.navIcons}>
-          <a href="https://www.facebook.com/pete.wanca" target="_blank">
-            <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faFacebook} />
-          </a>
-          <a href="https://www.instagram.com/petewanca/" target="_blank">
-            <FontAwesomeIcon className={navBarStyle.link} size="xl" icon={faInstagram} />
-          </a>
+          <hr className="navbar-divider" />
+          <div className={navBarStyle.navIcons}>
+            <a href="https:www.facebook.com/pete.wanca" target="_blank" className={`${navBarStyle.link} navbar-item`}>
+              <FontAwesomeIcon size="xl" icon={faFacebook} />
+            </a>
+            <a href="https:www.instagram.com/petewanca/" target="_blank" className={`${navBarStyle.link} navbar-item`}>
+              <FontAwesomeIcon size="xl" icon={faInstagram} />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

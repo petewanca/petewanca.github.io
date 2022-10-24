@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import "~bulma/sass/utilities/initial-variables";
 @import "_variables";
+
+// Navbar Overrides
+$navbar-background-color: transparent;
+$navbar-burger-color: $white;
+$navbar-item-hover-background-color: transparent;
+
 @import "~bulma/bulma.sass";
 @import "main.scss";
