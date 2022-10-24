@@ -10,9 +10,12 @@
 }
 
 .navbarMenu {
+  text-align: right;
+
   .navIcons {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
