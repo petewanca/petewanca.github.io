@@ -4,9 +4,6 @@ import PropTypes from "prop-types";
 // Context
 import { useAudioPlayer } from "context/audioPlayerContext";
 
-// Custom Hooks
-import useTracks from "hooks/useTracks";
-
 // Styling
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons";
