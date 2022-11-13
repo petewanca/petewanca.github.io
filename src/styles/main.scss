@@ -4,11 +4,9 @@ html,
 body {
   background: url("../images/console2_edit.png") no-repeat center center fixed;
   background-size: cover;
-  max-width: 1400px;
   height: 100vh;
   overflow: hidden;
   display: block;
-  margin: 0 auto;
   cursor: default;
   font-family: "Nunito Sans", sans-serif;
   color: $white;
@@ -40,5 +38,11 @@ a {
 
   &:hover {
     color: $white;
+  }
+}
+
+.container {
+  @include desktop {
+    margin-top: 2rem;
   }
 }
