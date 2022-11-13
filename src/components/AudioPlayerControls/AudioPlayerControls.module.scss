@@ -1,0 +1,44 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    margin-right: 1rem;
+    width: 20%;
+  }
+
+  div {
+    div:first-child {
+      text-align: left;
+      line-height: 25px;
+      font-size: 25px;
+      margin-left: -5px;
+      margin-top: -4px;
+    }
+
+    hr {
+      width: 1px;
+      content: " ";
+      margin-top: -50px;
+      position: relative;
+      top: 50px;
+      display: block;
+      height: 100%;
+      border-right: solid white 2px;
+      transform-origin: 100% 0;
+      transform: skew(-32deg);
+    }
+
+    div:last-child {
+      text-align: right;
+      line-height: 25px;
+      font-size: 25px;
+      margin-right: -5px;
+      margin-top: 6px;
+    }
+  }
+}
