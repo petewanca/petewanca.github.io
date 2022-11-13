@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-// Context
-import { useAudioPlayer } from "context/audioPlayerContext";
-
 // Styling
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,17 +10,20 @@ import {
 
 import * as audioPlayerStyle from "./AudioPlayerDisplay.module.scss";
 
-const AudioPlayerDisplay = (props) => {
-  const { state, dispatch } = useAudioPlayer();
-
+const AudioPlayerDisplay = ({
+  tracks,
+  currentTrackNo,
+  currentTrack,
+  dispatch,
+}) => {
   return (
     <div className={`${audioPlayerStyle.audioPlayerContainer}`}>
       <div className={`${audioPlayerStyle.trackDetailsContainer}`}>
-        <div className="title is-1">{state.currentTrack.title}</div>
-        <div className="subtitle is-3">by {state.currentTrack.artist}</div>
+        <div className="title is-1">{currentTrack.title}</div>
+        <div className="subtitle is-3">by {currentTrack.artist}</div>
       </div>
       <div>
-        {state.currentTrackNo !== 0 && (
+        {currentTrackNo !== 0 && (
           <FontAwesomeIcon
             onClick={() => dispatch({ type: "AUDIO_PLAYER_BACKWARD" })}
             className={`${audioPlayerStyle.playerControl}`}
@@ -31,7 +31,7 @@ const AudioPlayerDisplay = (props) => {
             icon={faArrowAltCircleLeft}
           />
         )}
-        {state.currentTrackNo !== state.tracks.length - 1 && (
+        {currentTrackNo !== tracks.length - 1 && (
           <FontAwesomeIcon
             onClick={() => dispatch({ type: "AUDIO_PLAYER_FORWARD" })}
             className={`${audioPlayerStyle.playerControl} pl-3`}
