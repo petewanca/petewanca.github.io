@@ -12,7 +12,10 @@ const NavBar = (props) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className={`${navBarStyle.navContainer} navbar`} role="navigation" aria-label="main navigation">
+    <nav
+      className={`${navBarStyle.navContainer} navbar`}
+      role="navigation"
+      aria-label="main navigation">
       <div className="navbar-brand">
         <Link className={`${navBarStyle.link} navbar-item`} to="/home">
           <Logo />
@@ -31,7 +34,11 @@ const NavBar = (props) => {
         </a>
       </div>
 
-      <div id="navbar" className={`${isActive ? "is-active" : ""} ${navBarStyle.navbarMenu} navbar-menu`}>
+      <div
+        id="navbar"
+        className={`${isActive ? "is-active" : ""} ${
+          navBarStyle.navbarMenu
+        } navbar-menu`}>
         <div className="navbar-end">
           <Link className={`${navBarStyle.link} navbar-item`} to="/about">
             about
@@ -41,10 +48,16 @@ const NavBar = (props) => {
           </Link>
           <hr className="navbar-divider" />
           <div className={navBarStyle.navIcons}>
-            <a href="https:www.facebook.com/pete.wanca" target="_blank" className={`${navBarStyle.link} navbar-item`}>
+            <a
+              href="https:www.facebook.com/pete.wanca"
+              target="_blank"
+              className={`${navBarStyle.link} navbar-item`}>
               <FontAwesomeIcon size="xl" icon={faFacebook} />
             </a>
-            <a href="https:www.instagram.com/petewanca/" target="_blank" className={`${navBarStyle.link} navbar-item`}>
+            <a
+              href="https:www.instagram.com/petewanca/"
+              target="_blank"
+              className={`${navBarStyle.link} navbar-item`}>
               <FontAwesomeIcon size="xl" icon={faInstagram} />
             </a>
           </div>
