@@ -12,10 +12,7 @@
             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
             crossorigin="anonymous"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
-        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway&display=swap"
@@ -29,16 +26,9 @@
         <nav id="nav" class="navbar navbar-light navbar-expand-lg">
             <div id="nav-container" class="container-fluid">
                 <a class="navbar-brand col-lg-3 m-auto" href="#">
-                    <img
-                        src="./assets/images/sheerpanic2.png"
-                        alt="Sheer Panic Studio Logo"
-                        height="80"
-                    />
+                    <img src="./assets/images/sheerpanic2.png" alt="Sheer Panic Studio Logo" height="80" />
                 </a>
-                <div
-                    class="d-lg-none"
-                    style="position: absolute; right: 1.5rem"
-                >
+                <div class="d-lg-none" style="position: absolute; right: 1.5rem">
                     <button
                         id="hamburger-menu"
                         class="navbar-toggler"
@@ -50,15 +40,13 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div
-                    class="d-lg-show d-none justify-content-end navbar-collapse"
-                >
+                <div class="d-lg-show d-none justify-content-end navbar-collapse">
                     <ul class="navbar-nav justify-content-around">
                         <li class="nav-item">
-                            <a href="#about">ABOUT</a>
+                            <a href="#work">WORK</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#work">WORK</a>
+                            <a href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contact">CONTACT</a>
@@ -80,10 +68,10 @@
 
                     <ul class="navbar-nav px-3 mb-2 mb-lg-0" id="mobile-nav-container">
                         <li class="nav-item mobile-nav-item">
-                            <a href="#about">ABOUT</a>
+                            <a href="#work">WORK</a>
                         </li>
                         <li class="nav-item mobile-nav-item">
-                            <a href="#work">WORK</a>
+                            <a href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item mobile-nav-item">
                             <a href="#contact">CONTACT</a>
@@ -94,8 +82,24 @@
         </nav>
 
         <!-- ICON AND DESCRIPTION AREA LARGE -->
-        <section class="marque-image px-md-5 mb-5">
-            <h1>You've created and recorded your art.<br />Now let's make something special.</h1>
+        <section class="text-center marque-image px-md-5 my-5" id="work">
+            <div class="row">
+                <figure class="col-12 text-center">
+                    <figcaption>Running Away by Bucky Shorts (Mixed)</figcaption>
+                    <audio controls src="./assets/audio/running-away-master.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </figure>
+                <!-- SONG 2 -->
+                <figure class="col-12 text-center">
+                    <figcaption>Sunny Pry by Body Origami (Mixed)</figcaption>
+                    <audio controls src="./assets/audio/sunny-pry-2022.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </figure>
+            </div>
         </section>
 
         <!-- PIC AND AUDIO AREA -->
@@ -112,56 +116,13 @@
                         </div>
                         <div class="col-md-6">
                             <h2>ABOUT</h2>
+                            <p>Hi, I'm Pete Wanca - Producer and Engineer from Nashville, TN.</p>
+                            <p>My goal is to help you create amazing music you're proud to share with the world.</p>
                             <p>
-                                Hey there. I'm Pete and I'm a mixing and mastering engineer located
-                                in Nashville, Tennessee, USA. I've spent my whole life in and around 
-                                music and my experience enables me to have a unique perspective on
-                                the creative process.
-                            </p>
-                            <p>
-                                I specialize in working with artists to understand their vision and
-                                create an end product they can be proud of -- great sounding music to
-                                share with the world.
-                            </p>
-                            <p>
-                                If you want to work with an engineer who will not only listen to you
-                                but also push you to create the best possible result, then let's chat
-                                and see if we're a good fit for each other!
+                                If you'd like to discuss working on your next project together,
+                                <a href="#contact">get in touch</a>!
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="container px-md-5 mb-5" id="work">
-            <div class="row">
-                <div class="col-12 col-lg-9 m-auto">
-                    <h2>MY WORK</h2>
-                    <!-- SONG NOTES -->
-                    <p class="font-italic">
-                        Below are a couple songs I've remixed for artists. These are meant to 
-                        serve as examples for how I approach a mix should you want to compare
-                        them to versions found on Spotify, Apple Music, etc.
-                    </p>
-                    <!-- SONG 1 -->
-                    <div class="row">
-                        <figure class="col-12 col-md-6 text-center">
-                            <figcaption>Running Away by Bucky Shorts</figcaption>
-                            <audio controls src="./assets/audio/running-away-master.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
-                        <!-- SONG 2 -->
-                        <figure class="col-12 col-md-6 text-center">
-                            <figcaption>Sunny Pry by Body Origami</figcaption>
-                            <audio controls src="./assets/audio/sunny-pry-2022.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </figure>
                     </div>
                 </div>
             </div>
@@ -172,39 +133,29 @@
             <div class="col-12 col-lg-9 m-auto">
                 <h2>CONTACT</h2>
                 <p>
-                    If you'd like to get in touch about your next project, fill out the form below.
-                    I can't wait to learn more about what you're working on.
+                    For questions on projects, pricing and services, send me a note and I'll get back to you within 24
+                    hours.
                 </p>
             </div>
             <div class="container g-0">
-                <form
-                    class="col-12 col-lg-9 m-auto"
-                    action="https://formspree.io/f/mqkgrwvr"
-                    method="POST"
-                >
+                <form class="col-12 col-lg-9 m-auto" action="https://formspree.io/f/mqkgrwvr" method="POST">
                     <div class="form-group mb-3">
                         <label>Name</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="John Dorian"
-                            name="name"
-                            required
-                        />
+                        <input type="text" class="form-control" placeholder="John Dorian" name="name" required />
                     </div>
                     <div class="form-group mb-3">
                         <label>Email address</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Enter email"
-                            name="reply to"
-                            required
-                        />
+                        <input type="email" class="form-control" placeholder="Enter email" name="reply to" required />
                     </div>
                     <div class="form-group mb-3">
                         <label>Message</label>
-                        <textarea name="message" class="form-control" rows="3" required></textarea>
+                        <textarea
+                            name="message"
+                            class="form-control"
+                            placeholder="Let's make some music!"
+                            rows="3"
+                            required
+                        ></textarea>
                     </div>
                     <button type="submit" class="btn btn-dark mb-3">Submit</button>
                     <small class="form-text text-muted float-end mt-0">
@@ -218,22 +169,19 @@
 
         <!-- FOOTER SECTION -->
         <footer class="bg-dark text-light text-center container-fluid p-3">
-            <p class="mb-2">&#169;2021 Pete Wanca</p>
+            <p class="mb-2">
+                &#169;
+                <script type="text/javascript">
+                    var year = new Date();
+                    document.write(year.getFullYear());
+                </script>
+                Pete Wanca
+            </p>
             <div class="mb-2">
-                <a
-                    class="footer-link"
-                    href="https://facebook.com/pete.wanca"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+                <a class="footer-link" href="https://facebook.com/pete.wanca" target="_blank" rel="noreferrer">
                     <i class="p-3 bi bi-facebook"></i>
                 </a>
-                <a
-                    class="footer-link"
-                    href="https://instagram.com/petewanca"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+                <a class="footer-link" href="https://instagram.com/petewanca" target="_blank" rel="noreferrer">
                     <i class="p-3 bi bi-instagram"></i>
                 </a>
             </div>
